@@ -16,7 +16,7 @@
 
 		if(isset($_SESSION['user'])!="")
 		{
-			header("Location: home.php")
+			header("Location: home.php");
 		}
 		include_once 'svr_config.php';
 
