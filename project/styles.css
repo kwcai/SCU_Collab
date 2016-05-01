@@ -26,6 +26,16 @@ h1 {
 	margin: 0px;
 }
 
+h2 {
+	position: relative;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.5em;
+	font-style: bold;
+	color: white;
+	margin: 0px;
+}
+
 .input {
 	position: relative;
 	margin: 2em auto 2em auto;

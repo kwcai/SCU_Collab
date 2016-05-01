@@ -53,23 +53,25 @@
 		}
 	?>
 
+	<h2>Enter your information</h2>
+	
 	<div id="form">
 		<form name = "reg" method = "post">
-			<table style = "50%">
+			<table style = "100%" align = "center">
 				<tr>
-					<td><input type = "text" name = "fname" placeholder = "First Name"></td>
+					<td><input type="text" name="fname" placeholder="First Name"></td>
 				</tr>
 				<tr>
-					<td><input type = "text" name = "lname" placeholder = "Last Name"></td>
+					<td><input type="text" name="lname" placeholder="Last Name"></td>
 				</tr>
 				<tr>
-					<td><input type = "text" name = "email" placeholder = "Email"></td>
+					<td><input type="text" name="email" placeholder="Email"></td>
 				</tr>
 				<tr>
-					<td><input type = "password" name = "password" placeholder = "Password"></td>
+					<td><input type="password" name = "password" placeholder = "Password"></td>
 				</tr>
 				<tr>
-					<button type="submit" name="reg_button">Register</button>
+					<td><button type="submit" name="reg_button">Register</button></td>
 				</tr>
 			</table>
 		</form>
