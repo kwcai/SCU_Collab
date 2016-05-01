@@ -1,13 +1,17 @@
 <?php
 	session_start();
 	include_once '../svr_config.php';
+
+	$user_check = $_SESSION['user']
+
+	$result = mysqli_query($db, "SELECT * FROM user_log WHERE user_id='$user_check'");
+	$userRow = mysqli_fetch_array($result, MYSQLI_ASSOC);
 	
 	if(!isset($_SESSION['user']))
 	{
 		header("Location: index.php");
 	}
-	$result = mysqli_query($db, "SELECT * FROM user_log WHERE user_id=".$_SESSION['user']);
-	$userRow = mysqli_fetch_array($result, MYSQLI_ASSOC);
+
 ?>
 
 <!DOCTYPE html>
