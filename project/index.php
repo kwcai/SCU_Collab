@@ -19,7 +19,7 @@
 			
 			if(isset($_POST['myLoginButton']))
 			{
-				echo 'ok';
+				
 				$email = mysqli_real_escape_string($db, $_POST['email']);
 				$pass = mysqli_real_escape_string($db, $_POST['pass']);
 
