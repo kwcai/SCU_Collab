@@ -9,7 +9,7 @@
 			header("Location: home.php");
 		}
 		
-		if(isset($_POST['btn-login']))
+		if(isset($_POST['loginButton']))
 		{
 			$email = mysqli_real_escape_string($_POST['email']);
 			$pass = mysqli_real_escape_string($_POST['pass']);
@@ -24,7 +24,7 @@
 			else
 			{
 				?>
-				<script>alert('wrong details');</script>
+				<script>alert('Incorrect login');</script>
 				<?php
 			}
 		}
@@ -45,11 +45,11 @@
 		</div>
 		
 		<div class = "input">
-			<input type="text" id="password" name="pwd" placeholder="password">
+			<input type="password" id="password" name="pwd" placeholder="password">
 		</div>
 		
 		<div class = "login">
-			<button id = "loginButton" onclick = "login()">Login</button>
+			<button id = "loginButton" name="loginButton">Login</button>
 		</div>
 		
 		<div class = "register">
