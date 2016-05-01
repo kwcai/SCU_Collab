@@ -24,7 +24,7 @@
 			$fname = mysqli_real_escape_string($_POST['fname']);
 			$lname = mysqli_real_escape_string($_POST['lname']);
 			$email = mysqli_real_escape_string($_POST['email']);
-			$pass = mysqli_real_escape_string($_POST['pass']);
+			$pass = mysqli_real_escape_string($_POST['password']);
 
 			if(mysqli_query("INSERT INTO user_log(name_first, name_last, email, password) VALUES ('$fname', '$lname', '$email', '$password')"))
 			{
