@@ -10,8 +10,6 @@
 	$row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 
 	$current_user=$row['name_first'] . " " . $row['name_last'];
-
-	echo $current_user;
 	
 	if(!isset($_SESSION['user']))
 	{
