@@ -29,13 +29,6 @@
 			}
 		}
 	?>
-
-	<div id="form">
-		<form name = "ind" method = "post">
-			<input type = "text" name = "email" placeholder = "email">
-			<input type = "text" name = "password" placeholder = "password">
-		</form>
-	</div>
 </body>
 
 <html lang="en">

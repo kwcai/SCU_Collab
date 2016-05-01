@@ -42,7 +42,7 @@
 				if(mysqli_num_rows($result) == 1)
 				{
 				?>
-					<script>alert('This email has already been used');</script>email
+					<script>alert('This email has already been used');</script>
 				<?php
 				}
 
