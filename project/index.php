@@ -18,6 +18,7 @@
 			
 			if(isset($_POST['myLoginButton']))
 			{
+				echo 'ok';
 				$email = mysqli_real_escape_string($_POST['email']);
 				$pass = mysqli_real_escape_string($_POST['pass']);
 				$res = mysqli_query("SELECT * FROM users WHERE email='$email'");
