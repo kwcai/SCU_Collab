@@ -4,6 +4,8 @@
 
 	$user_check = $_SESSION['user'];
 
+	echo $user_check;
+
 	$result = mysqli_query($db, "SELECT name_first AND name_last FROM user_log WHERE email='$user_check'");
 	$row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 
