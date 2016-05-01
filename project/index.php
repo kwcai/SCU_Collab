@@ -9,7 +9,7 @@
 			header("Location: home.php");
 		}
 		
-		if(isset($_POST['loginButton']))
+		if(isset($_POST['myLoginButton']))
 		{
 			$email = mysqli_real_escape_string($_POST['email']);
 			$pass = mysqli_real_escape_string($_POST['pass']);
@@ -49,7 +49,7 @@
 		</div>
 		
 		<div class = "login">
-			<button id = "loginButton" name="loginButton">Login</button>
+			<button id = "loginButton" name="myLoginButton">Login</button>
 		</div>
 		
 		<div class = "register">
