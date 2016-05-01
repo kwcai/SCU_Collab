@@ -6,8 +6,8 @@
 	{
 		header("Location: index.php");
 	}
-	$res = mysqli_query("SELECT * FROM users WHERE user_id=".$_SESSION['user']);
-	$userRow = mysqli_fetch_array($res);
+	$result = mysqli_query($db, "SELECT * FROM users WHERE user_id=".$_SESSION['user']);
+	$userRow = mysqli_fetch_array($result, MYSQLI_ASSOC);
 ?>
 
 <!DOCTYPE html>
