@@ -27,7 +27,7 @@
 			$email = mysql_real_escape_string($_POST['email']);
 			$pass = mysql_real_escape_string($_POST['pass']);
 
-			if(mysql_query("INSERT INTO user_log(name_first, name_last, email, password) VALUES ('$namefirst', '$namelast', '$email', '$password')"))
+			if(mysql_query("INSERT INTO user_log(name_first, name_last, email, password) VALUES ('$fname', '$lname', '$email', '$password')"))
 			{
 			?>
 				<script>alert('You have been successfully registered');</script>
@@ -44,8 +44,8 @@
 
 	<div id="form">
 		<form name = "reg" method = "post">
-			<input type = "text" name = "namefirst" placeholder = "First Name">
-			<input type = "text" name = "namelast" placeholder = "Last Name">
+			<input type = "text" name = "fname" placeholder = "First Name">
+			<input type = "text" name = "lname" placeholder = "Last Name">
 			<input type = "text" name = "email" placeholder = "Email">
 			<input type = "password" name = "password" placeholder = "Password">
 			<button type="submit" name="btn-reg">Register</button>button>
