@@ -21,12 +21,24 @@
 
 		if(isset($_POST['reg_button']))
 		{
-			$fname = mysqli_real_escape_string($_POST['fname']);
-			$lname = mysqli_real_escape_string($_POST['lname']);
-			$email = mysqli_real_escape_string($_POST['email']);
-			$pass = mysqli_real_escape_string($_POST['password']);
+			$fname = mysqli_real_escape_string($db, $_POST['fname']);
+			$lname = mysqli_real_escape_string($db, $_POST['lname']);
+			$email = mysqli_real_escape_string($db, $_POST['email']);
+			$pass = mysqli_real_escape_string($db, $_POST['password']);
+			$pass = md5($password);
 
-			if(mysqli_query("INSERT INTO user_log(name_first, name_last, email, password) VALUES ('$fname', '$lname', '$email', '$password')"))
+			$sql = "SELECT email FROM user_log WHERE email = '$email'";
+			$result = mysqli_query($db, $sql);
+			$row = mysqli_fetch_array($result, MYSQLI_ASSOC)
+
+			if(mysqli_num_rows($result) == 1)
+			{
+			?>
+				<script>alert('This email has already been used');</script>email
+			<?php
+			}
+
+			if(mysqli_query($db, "INSERT INTO user_log(name_first, name_last, email, password) VALUES ('$fname', '$lname', '$email', '$password')"))
 			{
 			?>
 				<script>alert('You have been successfully registered');</script>
@@ -37,7 +49,7 @@
 			?>
 				<script>alert('Registration error');</script>
 			<?php
-			}
+			}*/
 		}
 	?>
 
