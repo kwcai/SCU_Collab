@@ -22,8 +22,8 @@
 				echo 'ok';
 				$email = mysqli_real_escape_string($db, $_POST['email']);
 				$pass = mysqli_real_escape_string($db, $_POST['pass']);
-				
-				$result = mysqli_query($db, "SELECT * FROM users WHERE email='$email'");
+
+				$result = mysqli_query($db, "SELECT * FROM user_log WHERE email='$email'");
 				$row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 				
 				if($row['password']==md5($pass))
