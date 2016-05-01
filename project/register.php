@@ -29,7 +29,7 @@
 
 			$sql = "SELECT email FROM user_log WHERE email = '$email'";
 			$result = mysqli_query($db, $sql);
-			$row = mysqli_fetch_array($result, MYSQLI_ASSOC)
+			$row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 
 			if(mysqli_num_rows($result) == 1)
 			{
