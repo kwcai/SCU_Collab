@@ -9,12 +9,14 @@
 	<body>
 		<?php
 			session_start();
-			include_once '../svr_config.php';
+			
 			
 			if(isset($_SESSION['user'])!="")
 			{
 				header("Location: home.php");
 			}
+			
+			include_once '../svr_config.php';
 			
 			if(isset($_POST['myLoginButton']))
 			{
