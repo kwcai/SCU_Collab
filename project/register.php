@@ -43,13 +43,23 @@
 
 	<div id="form">
 		<form name = "reg" method = "post">
-			<input type = "text" name = "fname" placeholder = "First Name">
-			<input type = "text" name = "lname" placeholder = "Last Name">
-			<input type = "text" name = "email" placeholder = "Email">
-			<input type = "password" name = "password" placeholder = "Password">
-			<button type="submit" name="reg_button">Register</button>
+			<table style = "50%">
+				<tr>
+					<td><input type = "text" name = "fname" placeholder = "First Name"></td>
+				</tr>
+				<tr>
+					<td><input type = "text" name = "lname" placeholder = "Last Name"></td>
+				</tr>
+				<tr>
+					<td><input type = "text" name = "email" placeholder = "Email"></td>
+				</tr>
+				<tr>
+					<td><input type = "password" name = "password" placeholder = "Password"></td>
+				</tr>
+				<tr>
+					<button type="submit" name="reg_button">Register</button>
+				</tr>
+			</table>
 		</form>
 	</div>
-
-	<a href="index.php"> Log In </a>
 </body>
