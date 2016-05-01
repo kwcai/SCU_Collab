@@ -2,7 +2,7 @@
 	session_start();
 	include_once '../svr_config.php';
 
-	$user_check = $_SESSION['user']
+	$user_check = $_SESSION['user'];
 
 	$result = mysqli_query($db, "SELECT name_first AND name_last FROM user_log WHERE email='$user_check'");
 	$userRow = mysqli_fetch_array($result, MYSQLI_ASSOC);
