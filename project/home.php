@@ -4,7 +4,7 @@
 
 	$user_check = $_SESSION['user']
 
-	$result = mysqli_query($db, "SELECT * FROM user_log WHERE user_id='$user_check'");
+	$result = mysqli_query($db, "SELECT name_first AND name_last FROM user_log WHERE email='$user_check'");
 	$userRow = mysqli_fetch_array($result, MYSQLI_ASSOC);
 	
 	if(!isset($_SESSION['user']))

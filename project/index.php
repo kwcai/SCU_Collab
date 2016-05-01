@@ -28,7 +28,7 @@
 				
 				if($row['password']==md5($pass))
 				{
-					$_SESSION['user'] = $row['user_id'];
+					$_SESSION['user'] = $row['email'];
 					header("Location: home.php");
 				}
 				else
