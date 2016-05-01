@@ -18,16 +18,16 @@
 		{
 			header("Location: home.php");
 		}
-		include_once '../svr_config.php';
+		include_once 'svr_config.php';
 
 		if(isset($_POST['reg_button']))
 		{
-			$fname = mysqli_real_escape_string($_POST['fname']);
-			$lname = mysqli_real_escape_string($_POST['lname']);
-			$email = mysqli_real_escape_string($_POST['email']);
-			$pass = mysqli_real_escape_string($_POST['pass']);
+			$fname = $MySQLi_CON->real_escape_string(trim($_POST['fname']));
+			$lname = $MySQLi_CON->real_escape_string(trim($_POST['lname']));
+			$email = $MySQLi_CON->real_escape_string(trim($_POST['email']));
+			$pass = $MySQLi_CON->real_escape_string(trim($_POST['pass']));
 
-			if(mysqli_query("INSERT INTO user_log(name_first, name_last, email, password) VALUES ('$fname', '$lname', '$email', '$password')"))
+			if($MySQLi_CON->query("INSERT INTO user_log(name_first, name_last, email, password) VALUES ('$fname', '$lname', '$email', '$password')"))
 			{
 			?>
 				<script>alert('You have been successfully registered');</script>
@@ -48,7 +48,7 @@
 			<input type = "text" name = "lname" placeholder = "Last Name">
 			<input type = "text" name = "email" placeholder = "Email">
 			<input type = "password" name = "password" placeholder = "Password">
-			<button type="submit" name="reg_button">Register</button>
+			<button type="submit" name="btn-reg">Register</button>
 		</form>
 	</div>
 
