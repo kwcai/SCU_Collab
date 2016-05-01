@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	include_once 'databaseconnect.php';
+	include_once '../svr_config.php';
 	
 	if(!isset($_SESSION['user']))
 	{

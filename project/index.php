@@ -49,7 +49,7 @@
 		</div>
 		
 		<div class = "login">
-			<button id = "loginButton" name="myLoginButton">Login</button>
+			<input type="submit" button id = "loginButton" name="myLoginButton">Login</button>
 		</div>
 		
 		<div class = "register">
