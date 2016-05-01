@@ -9,7 +9,9 @@
 	<body>
 		<?php
 			session_start();
+			//include_once '../svr_config.php';
 			
+			echo "test";
 			
 			if(isset($_SESSION['user'])!="")
 			{
@@ -40,22 +42,22 @@
 			}
 		?>
 		<h1>SCU Collab</h1>
-		
-		<div class = "input">
-			<input type="text" name="email" placeholder="email">
-		</div>
-		
-		<div class = "input">
-			<input type="password" name="pwd" placeholder="password">
-		</div>
-		
-		<div class = "login">
-			<button type="submit" name="myLoginButton">Login</button>
-		</div>
-		
-		<div class = "register">
-			<a href = "register.php">Sign Up</a>
-		</div>
-		
+		<form name="log" method="post">
+			<div class = "input">
+				<input type="text" name="email" placeholder="email">
+			</div>
+			
+			<div class = "input">
+				<input type="password" name="pwd" placeholder="password">
+			</div>
+			
+			<div class = "login">
+				<button type="submit" name="myLoginButton">Login</button>
+			</div>
+			
+			<div class = "register">
+				<a href = "register.php">Sign Up</a>
+			</div>
+		</form>
 	</body>
 </html>
