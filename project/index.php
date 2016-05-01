@@ -1,7 +1,7 @@
 <body>
 	<?php
 		session_start();
-		include_once '[filename].php';
+		include_once 'databaseconnect.php';
 		
 		if(isset($_SESSION['user'])!="")
 		{
@@ -29,9 +29,8 @@
 
 	<div id="form">
 		<form name = "ind" method = "post">
-			<input type = "text" name = "email" placeholder = "Email">
-			<input type = "text" name = "password" placeholder = "Password">
+			<input type = "text" name = "email" placeholder = "email">
+			<input type = "text" name = "password" placeholder = "password">
 		</form>
-	</div>
-	
+	</div>	
 </body>
