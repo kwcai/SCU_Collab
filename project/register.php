@@ -8,7 +8,6 @@
 </head>
 
 <body>
-
 	<?php
 		session_start();
 
@@ -53,5 +52,4 @@
 	</div>
 
 	<a href="index.php"> Log In </a>
-
 </body>

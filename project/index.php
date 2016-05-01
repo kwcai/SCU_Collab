@@ -14,6 +14,7 @@
 			$pass = mysqli_real_escape_string($_POST['pass']);
 			$res = mysqli_query("SELECT * FROM users WHERE email='$email'");
 			$row = mysqli_fetch_array($res);
+			
 			if($row['password']==md5($pass))
 			{
 				$_SESSION['user'] = $row['user_id'];
@@ -33,7 +34,7 @@
 			<input type = "text" name = "email" placeholder = "email">
 			<input type = "text" name = "password" placeholder = "password">
 		</form>
-	</div>	
+	</div>
 </body>
 
 
