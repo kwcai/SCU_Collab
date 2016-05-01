@@ -49,7 +49,7 @@
 			?>
 				<script>alert('Registration error');</script>
 			<?php
-			}*/
+			}
 		}
 	?>
 
