@@ -21,34 +21,43 @@
 
 		if(isset($_POST['reg_button']))
 		{
-			$fname = mysqli_real_escape_string($db, $_POST['fname']);
-			$lname = mysqli_real_escape_string($db, $_POST['lname']);
-			$email = mysqli_real_escape_string($db, $_POST['email']);
-			$pass = mysqli_real_escape_string($db, $_POST['password']);
-			$pass = md5($password);
-
-			$sql = "SELECT email FROM user_log WHERE email = '$email'";
-			$result = mysqli_query($db, $sql);
-			$row = mysqli_fetch_array($result, MYSQLI_ASSOC);
-
-			if(mysqli_num_rows($result) == 1)
+			if(empty($_POST["fname"]) || empty($_POST["lname"]) || empty($_POST["email"]) || empty($_POST["password"]))
 			{
-			?>
-				<script>alert('This email has already been used');</script>email
-			<?php
-			}
+				$error = "Both fields are required.";
+			} else
+			{
+				$fname = mysqli_real_escape_string($db, $_POST['fname']);
+				$lname = mysqli_real_escape_string($db, $_POST['lname']);
+				$email = mysqli_real_escape_string($db, $_POST['email']);
+				$pass = mysqli_real_escape_string($db, $_POST['password']);
+				$pass = md5($pass);
 
-			if(mysqli_query($db, "INSERT INTO user_log(name_first, name_last, email, password) VALUES ('$fname', '$lname', '$email', '$password')"))
-			{
-			?>
-				<script>alert('You have been successfully registered');</script>
-			<?php
-			}
-			else
-			{
-			?>
-				<script>alert('Registration error');</script>
-			<?php
+				$sql = "SELECT email FROM user_log WHERE email = '$email'";
+				$result = mysqli_query($db, $sql);
+				$row = mysqli_fetch_array($result, MYSQLI_ASSOC);
+
+				//Make sure all fields are filled
+
+
+				if(mysqli_num_rows($result) == 1)
+				{
+				?>
+					<script>alert('This email has already been used');</script>email
+				<?php
+				}
+
+				if(mysqli_query($db, "INSERT INTO user_log(name_first, name_last, email, password) VALUES ('$fname', '$lname', '$email', '$pass')"))
+				{
+				?>
+					<script>alert('You have been successfully registered');</script>
+				<?php
+				}
+				else
+				{
+				?>
+					<script>alert('Registration error');</script>
+				<?php
+				}
 			}
 		}
 	?>
