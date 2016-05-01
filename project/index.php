@@ -1,7 +1,8 @@
+<!DOCTYPE html>
 <body>
 	<?php
 		session_start();
-		include_once 'databaseconnect.php';
+		include_once '../svr_config.php';
 		
 		if(isset($_SESSION['user'])!="")
 		{
@@ -37,17 +38,6 @@
 	</div>
 </body>
 
-
-
-<!--qnimate.com/creating-a-sidebar-menu/-->
-<?php
-	include("svr_config.php");
-	session_start();
-
-	if($_SERVER["REQUEST_METHOD"] == "POST")
-?>
-
-<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<title>Login Page</title>
