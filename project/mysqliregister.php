@@ -22,10 +22,10 @@
 
 		if(isset($_POST['reg_button']))
 		{
-			$fname = $MySQLi_CON->real_escape_string(trim($_POST['fname']));
-			$lname = $MySQLi_CON->real_escape_string(trim($_POST['lname']));
-			$email = $MySQLi_CON->real_escape_string(trim($_POST['email']));
-			$pass = $MySQLi_CON->real_escape_string(trim($_POST['pass']));
+			$fname = mysqli_real_escape_string(trim($_POST['fname']));
+			$lname = mysqli_real_escape_string(trim($_POST['lname']));
+			$email = mysqli_real_escape_string(trim($_POST['email']));
+			$pass = mysqli_real_escape_string(trim($_POST['pass']));
 
 			if($MySQLi_CON->query("INSERT INTO user_log(name_first, name_last, email, password) VALUES ('$fname', '$lname', '$email', '$password')"))
 			{

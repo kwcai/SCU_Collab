@@ -10,10 +10,10 @@
 		
 		if(isset($_POST['btn-login']))
 		{
-			$email = $MySQLi_CON->real_escape_string($_POST['email']);
-			$pass = $MySQLi_CON->real_escape_string($_POST['pass']);
-			$res = $MySQLi_CON->query("SELECT * FROM users WHERE email='$email'");
-			$row = $MySQLi_CON->fetch_array($res);
+			$email = mysqli_real_escape_string($_POST['email']);
+			$pass = mysqli_real_escape_string($_POST['pass']);
+			$res = mysqli_query("SELECT * FROM users WHERE email='$email'");
+			$row = mysqli_fetch_array($res);
 			if($row['password']==md5($pass))
 			{
 				$_SESSION['user'] = $row['user_id'];
