@@ -10,8 +10,6 @@
 		<?php
 			session_start();
 			
-			echo "test";
-			
 			if(isset($_SESSION['user'])!="")
 			{
 				header("Location: home.php");
@@ -48,7 +46,7 @@
 			</div>
 			
 			<div class = "input">
-				<input type="password" name="pwd" placeholder="password">
+				<input type="password" name="pass" placeholder="password">
 			</div>
 			
 			<div class = "login">
