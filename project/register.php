@@ -23,7 +23,7 @@
 		{
 			if(empty($_POST["fname"]) || empty($_POST["lname"]) || empty($_POST["email"]) || empty($_POST["password"]))
 			{
-				$error = "Both fields are required.";
+				$error = "Fields are required";
 			} else
 			{
 				$fname = mysqli_real_escape_string($db, $_POST['fname']);
