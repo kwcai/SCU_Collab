@@ -5,7 +5,7 @@
 	$user_check = $_SESSION['user'];
 
 	$result = mysqli_query($db, "SELECT name_first AND name_last FROM user_log WHERE email='$user_check'");
-	$userRow = mysqli_fetch_array($result, MYSQLI_ASSOC);
+	$row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 
 	$current_user=$row['name_first'] . " " . $row['name_last'];
 	
@@ -30,6 +30,6 @@
 		<h2>Join Group</h2>
 		<h2>View Groups</h2>
 		<h2>View Calendar</h2>
-		<a href="logout.php" style="font-size:18px">Logout?</a>
+		<a href="logout.php" style="font-size:18px">Logout</a>
 	</body>
 </html>
