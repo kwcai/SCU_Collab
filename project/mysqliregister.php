@@ -18,7 +18,7 @@
 		{
 			header("Location: home.php");
 		}
-		include_once 'svr_config.php';
+		include_once '../svr_config.php';
 
 		if(isset($_POST['reg_button']))
 		{
@@ -48,7 +48,7 @@
 			<input type = "text" name = "lname" placeholder = "Last Name">
 			<input type = "text" name = "email" placeholder = "Email">
 			<input type = "password" name = "password" placeholder = "Password">
-			<button type="submit" name="btn-reg">Register</button>
+			<button type="submit" name="reg_button">Register</button>
 		</form>
 	</div>
 
