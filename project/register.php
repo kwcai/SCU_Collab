@@ -22,12 +22,12 @@
 
 		if(isset($_POST['reg_button']))
 		{
-			$fname = mysql_real_escape_string($_POST['fname']);
-			$lname = mysql_real_escape_string($_POST['lname']);
-			$email = mysql_real_escape_string($_POST['email']);
-			$pass = mysql_real_escape_string($_POST['pass']);
+			$fname = mysqli_real_escape_string($_POST['fname']);
+			$lname = mysqli_real_escape_string($_POST['lname']);
+			$email = mysqli_real_escape_string($_POST['email']);
+			$pass = mysqli_real_escape_string($_POST['pass']);
 
-			if(mysql_query("INSERT INTO user_log(name_first, name_last, email, password) VALUES ('$fname', '$lname', '$email', '$password')"))
+			if(mysqli_query("INSERT INTO user_log(name_first, name_last, email, password) VALUES ('$fname', '$lname', '$email', '$password')"))
 			{
 			?>
 				<script>alert('You have been successfully registered');</script>
