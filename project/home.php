@@ -4,12 +4,10 @@
 
 	$user_check = $_SESSION['user'];
 
-	echo $user_check;
-
 	$result = mysqli_query($db, "SELECT * FROM user_log WHERE email='$user_check'");
 	$row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 
-	$current_user=$row['email'];
+	$current_user=$row['name_first'] . " " . $row['name_last'];
 	
 	if(!isset($_SESSION['user']))
 	{
