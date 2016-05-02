@@ -51,6 +51,7 @@
 				?>
 					<script>alert('You have been successfully registered');</script>
 				<?php
+					header("Location: index.php")
 				}
 				else
 				{
