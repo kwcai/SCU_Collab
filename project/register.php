@@ -48,10 +48,10 @@
 
 				if(mysqli_query($db, "INSERT INTO user_log(name_first, name_last, email, password) VALUES ('$fname', '$lname', '$email', '$pass')"))
 				{
+					header("Location: index.php");
 				?>
 					<script>alert('You have been successfully registered');</script>
 				<?php
-					header("Location: index.php")
 				}
 				else
 				{
