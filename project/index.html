@@ -1,36 +1,41 @@
-<!--qnimate.com/creating-a-sidebar-menu/-->
-<?php
-	include("svr_config.php");
-	session_start();
-
-	if($_SERVER["REQUEST_METHOD"] == "POST")
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<title>Login Page</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="styles.css">
+
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+		<script src="js/index.js"></script>
 	</head>
+	
 	<body>
-		<h1>SCU Collab</h1>
-		
-		<div class = "input">
-			<input type="text" id="username" name="email" placeholder="email">
+		<div data-role="page" id="register">
+			<div data-role="header">
+				<h1>SCU Collab</h1>
+			</div>
+
+			<div id="form">
+				<form name = "log" method = "post" data-ajax="false">
+					<fieldset>
+						<div data-role="ui-fieldcontain">
+							<label for="email">Email</label>
+							<input type="text" name="email" placeholder="Email" />
+						</div>
+						<div data-role="ui-fieldcontain">
+							<label for="password">Password</label>
+							<input type="text" name="password" placeholder= "Password"></textarea>
+						</div>
+						<input type="submit" name="myLoginButton" value="Login" />
+						<div class"register">
+							<a href="register.php">Sign Up</a>
+						</div>
+					</fieldset>
+				</form>
+			</div>
 		</div>
-		
-		<div class = "input">
-			<input type="text" id="password" name="pwd" placeholder="password">
-		</div>
-		
-		<div class = "login">
-			<button id = "loginButton" onclick = "login()">Login</button>
-		</div>
-		
-		<div class = "register">
-			<a href = "register.php">Sign Up</a>
-		</div>
-		
 	</body>
 </html>
