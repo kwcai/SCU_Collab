@@ -1,41 +1,47 @@
-<?php
-	session_start();
-
-	if(isset($_SESSION['user'])!="")
-	{
-		header("Location: home.php");
-		exit;
-	}
-	include_once '../svr_config.php';
-
-	$user_check = $_SESSION['user'];
-
-	$result = mysqli_query($db, "SELECT * FROM user_log WHERE email='$user_check'");
-	$row = mysqli_fetch_array($result, MYSQLI_ASSOC);
-
-	$current_user=$row['name_first'] . " " . $row['name_last'];
-	
-	if(!isset($_SESSION['user']))
-	{
-		header("Location: index.php");
-	}
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<title>Home Page</title>
 		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="styles.css">
+		<link rel="stylesheet" type="text/css" href="homepagetest.css">
 	</head>
 	<body>
-		<h1>Hello, <em><?php echo $current_user;?>!</em></h1>
-		<h1>SCU Collab</h1>
-		<h2>Create Group</h2>
-		<h2>Join Group</h2>
-		<h2>View Groups</h2>
-		<h2>View Calendar</h2>
-		<a href="logout.php" style="font-size:18px">Logout</a>
+		<div id="headerbar">
+			<h1 class="center">SCU Collab</h1>
+		</div>
+		
+		<div id="footerbar">
+			<h2 class="center">Welcome, <em><?php echo $current_user;?>!</em></h2>
+		</div>
+		
+		<img class="toggle" src="toggle_sidebar.png" onclick="toggle_sidebar()">
+
+		<div id="sidebar">
+			<ul>
+				<li><?php echo $current_user;?></li>
+				<li><h2>Math group</h2></li>
+				<li id="logout"><h3>Logout</h3></li>
+			</ul>
+		</div>
 	</body>
+	
+	
+	
+	<script>
+        function toggle_sidebar()
+        {
+            var sidebar = document.getElementById("sidebar");
+            
+            console.log(sidebar.style.left);
+            
+            if(sidebar.style.left == "-200px")
+            {
+                sidebar.style.left = "0px";
+			}
+            else
+            {
+                sidebar.style.left = "-200px";
+			}
+		}
+	</script>
 </html>

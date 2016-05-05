@@ -78,3 +78,75 @@ h2 {
 	text-decoration:none;
 	text-shadow:0px 1px 0px #ffffff;	
 }
+
+#headerbar {
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	height: 20%;
+	background-color: #ff6666;
+}
+
+#footerbar {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: 80%;
+}
+
+.center {
+	position: absolute;
+	transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+#container {
+	position: fixed;
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+	left: 0px;
+	background: black;
+	
+	/*-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+	-o-transition-duration: 0.3s;
+	transition-duration: 0.3s;*/
+}
+
+/*#sidebar {
+	position: fixed;
+	top: 40px;
+	left: -250px;
+}*/
+
+#sidebar ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#sidebar {
+	position: fixed;
+	display: inline-block;
+	top: 0px;
+	height: 100%;
+	width: 200px;
+	left: -200px;
+	background-color: #ff6666;
+	transition: all 0.5s ease-in-out;
+}
+
+.toggle {
+	position: fixed;
+	right: 10px;
+	top: 10px;
+	width: 50px;
+	height: 50px;
+}
+
+#logout {
+	position: relative;
+	bottom: 0px;
+}
