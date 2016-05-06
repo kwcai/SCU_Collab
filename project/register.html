@@ -1,46 +1,45 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-	<title>Register for SCUCollab</title>
-	<link rel="stylesheet" type = "text/css" href="styles.css" />
-
-	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
-	<script src="register.js"></script>
-</head>
-
-<body>
-	<div data-role="page" id="register">
-		<div data-role="header">
-			<h1>Enter your information</h1>
+<html lang="en">
+	<head>
+		<title>Register for SCUCollab</title>
+		<link rel="stylesheet" type = "text/css" href="styles.css" />
+		
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+		<script src="register.js"></script>
+	</head>
+	
+	<body>
+		<div data-role="page" id="register">
+			<div data-role="header">
+				<h1>Enter your information</h1>
+			</div>
+			
+			<div id="form">
+				<form name = "reg" method = "post" data-ajax="false">
+					<fieldset>
+						<div data-role="ui-fieldcontain">
+							<label for="fname">First Name</label>
+							<input type="text" name="f_name" placeholder="First Name" />
+						</div>
+						<div data-role="ui-fieldcontain">
+							<label for="lname">Last Name</label>
+							<input type="text" name="l_name" placeholder= "Last Name">
+						</div>
+						<div data-role="ui-fieldcontain">
+							<label for="email">Email</label>
+							<input type="text" name="email" placeholder= "email">
+						</div>
+						<div data-role="ui-fieldcontain">
+							<label for="password">Password</label>
+							<input type="text" name="password" placeholder= "Password">
+						</div>
+						<button id="registerbtn">Register</button>
+					</fieldset>
+				</form>
+			</div>
 		</div>
-
-		<div id="form">
-			<form name = "reg" method = "post" data-ajax="false">
-				<fieldset>
-					<div data-role="ui-fieldcontain">
-						<label for="fname">First Name</label>
-						<input type="text" name="f_name" id="f_name" placeholder="First Name" />
-					</div>
-					<div data-role="ui-fieldcontain">
-						<label for="lname">Last Name</label>
-						<input type="text" name="l_name" id="l_name" placeholder= "Last Name"></textarea>
-					</div>
-					<div data-role="ui-fieldcontain">
-						<label for="email">Email</label>
-						<input type="text" name="email" id="email" placeholder= "email"></textarea>
-					</div>
-					<div data-role="ui-fieldcontain">
-						<label for="password">Password</label>
-						<input type="text" name="password" id="password" placeholder= "Password"></textarea>
-					</div>
-					<button id="registerbtn">Register</button>
-				</fieldset>
-			</form>
-		</div>
-	</div>
-</body>
+	</body>
 </html>
