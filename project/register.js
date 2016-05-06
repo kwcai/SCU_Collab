@@ -1,6 +1,6 @@
 $(document).ready(function()
 {
-	$(#register).click(function()
+	$("register").click(function()
 	{
 		var firstname=$("f_name");
 		var lastname=$("l_name");
@@ -33,5 +33,5 @@ $(document).ready(function()
 			});
 		}
 		return false;
-	}
-}
+	});
+});
