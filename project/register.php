@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html>
 
 <head>
@@ -7,63 +7,57 @@
 	<link rel="stylesheet" href="styles.css" />
 </head>
 
-<body>
+<body> -->
 	<?php
-		session_start();
+		//session_start();
 
 		//check if there is active session or not
 
-		if(isset($_SESSION['user'])!="")
+		/*if(isset($_SESSION['user'])!="")
 		{
 			header("Location: home.php");
 			exit;
-		}
-		include_once '../svr_config.php';
+		}*/
+		include '../svr_config.php';
 
-		if(isset($_POST['reg_button']))
+		if(isset($_POST['register']))
 		{
-			if(empty($_POST["fname"]) || empty($_POST["lname"]) || empty($_POST["email"]) || empty($_POST["password"]))
+			$fname = mysqli_real_escape_string($db, $_POST['fname']);
+			$lname = mysqli_real_escape_string($db, $_POST['lname']);
+			$email = mysqli_real_escape_string($db, $_POST['email']);
+			$pass = mysqli_real_escape_string($db, $_POST['password']);
+			$pass = md5($pass);
+
+			$sql = "SELECT email FROM user_log WHERE email = '$email'";
+			$result = mysqli_query($db, $sql);
+			$row = mysqli_fetch_array($result, MYSQLI_ASSOC);
+
+			//Make sure all fields are filled
+
+
+			if(mysqli_num_rows($result) != 0)
 			{
-				$error = "Fields are required";
-			} else
+				echo "exist";
+			}
+			else
 			{
-				$fname = mysqli_real_escape_string($db, $_POST['fname']);
-				$lname = mysqli_real_escape_string($db, $_POST['lname']);
-				$email = mysqli_real_escape_string($db, $_POST['email']);
-				$pass = mysqli_real_escape_string($db, $_POST['password']);
-				$pass = md5($pass);
+				$entry = mysqli_query($db, "INSERT INTO user_log(name_first, name_last, email, password) VALUES ('$fname', '$lname', '$email', '$pass')"))
 
-				$sql = "SELECT email FROM user_log WHERE email = '$email'";
-				$result = mysqli_query($db, $sql);
-				$row = mysqli_fetch_array($result, MYSQLI_ASSOC);
-
-				//Make sure all fields are filled
-
-
-				if(mysqli_num_rows($result) == 1)
+				if($entry)
 				{
-				?>
-					<script>alert('This email has already been used');</script>
-				<?php
+					echo "success";
 				}
-
-				if(mysqli_query($db, "INSERT INTO user_log(name_first, name_last, email, password) VALUES ('$fname', '$lname', '$email', '$pass')"))
-				{
-					header("Location: index.php");
-				?>
-					<script>alert('You have been successfully registered');</script>
-				<?php
-				}
+			
 				else
 				{
-				?>
-					<script>alert('Registration error');</script>
-				<?php
+					echo "failed";
 				}
 			}
+		
+		echo mysqli_error($db);
 		}
 	?>
-
+<!--
 	<h2>Enter your information</h2>
 	
 	<div id="form">
@@ -87,4 +81,4 @@
 			</table>
 		</form>
 	</div>
-</body>
+</body> -->
