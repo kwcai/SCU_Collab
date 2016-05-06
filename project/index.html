@@ -9,7 +9,8 @@
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
-		<script src="js/index.js"></script>
+		<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
+		<script src="login.js"></script>
 	</head>
 	
 	<body>
@@ -19,21 +20,21 @@
 			</div>
 			
 			<div id="form">
-				<form name = "log" method = "post" data-ajax="false">
+				<form name = "log" id="login-form" method = "post" data-ajax="false">
 					<fieldset>
 						<div class="input" data-role="ui-fieldcontain">
 							<!--<label for="email">Email</label>-->
-							<input type="text" name="email" placeholder="Email" />
+							<input type="text" name="email" id="email" placeholder="Email" />
 						</div>
 						<div class="input" data-role="ui-fieldcontain">
 							<!--<label for="password">Password</label>-->
-							<input type="password" name="password" placeholder= "Password">
+							<input type="password" name="password" id="password" placeholder= "Password">
 						</div>
 						<div class="login">
-							<input type="submit" name="myLoginButton" class="customButton" data-role="none" value="Login" />
+							<button id="loginbtn" name="myLoginButton" class="customButton" data-role="none" value="Login" >Log In</button>
 						</div>
 						<div class="register">
-							<a href="register.php">Sign Up</a>
+							<a href="register.html">Sign Up</a>
 						</div>
 					</fieldset>
 				</form>
