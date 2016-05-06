@@ -21,16 +21,18 @@
 			<div id="form">
 				<form name = "log" method = "post" data-ajax="false">
 					<fieldset>
-						<div data-role="ui-fieldcontain">
-							<label for="email">Email</label>
+						<div class="input" data-role="ui-fieldcontain">
+							<!--<label for="email">Email</label>-->
 							<input type="text" name="email" placeholder="Email" />
 						</div>
-						<div data-role="ui-fieldcontain">
-							<label for="password">Password</label>
-							<input type="text" name="password" placeholder= "Password"></textarea>
+						<div class="input" data-role="ui-fieldcontain">
+							<!--<label for="password">Password</label>-->
+							<input type="text" name="password" placeholder= "Password">
 						</div>
-						<input type="submit" name="myLoginButton" value="Login" />
-						<div class"register">
+						<div class="login">
+							<input type="submit" name="myLoginButton" class="customButton" data-role="none" value="Login" />
+						</div>
+						<div class="register">
 							<a href="register.php">Sign Up</a>
 						</div>
 					</fieldset>
