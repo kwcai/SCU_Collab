@@ -1,32 +1,11 @@
-<!--<!DOCTYPE html>
-<html>
+<?php
 
-<head>
-	<meta charset="UTF-8">
-	<title>Register for SCUCollab</title>
-	<link rel="stylesheet" href="styles.css" />
-</head>
-
-<body> -->
-	<?php
-		//session_start();
-
-		//check if there is active session or not
-
-		/*if(isset($_SESSION['user'])!="")
-		{
-			header("Location: home.php");
-			exit;
-		}*/
 		include '../svr_config.php';
 
-		$message = "wrong answer";
-echo "<script type='text/javascript'>alert('$message');</script>";
-
-		if(isset($_POST['register']))
+		if($_POST)
 		{
-			$fname = mysqli_real_escape_string($db, $_POST['fname']);
-			$lname = mysqli_real_escape_string($db, $_POST['lname']);
+			$fname = mysqli_real_escape_string($db, $_POST['f_name']);
+			$lname = mysqli_real_escape_string($db, $_POST['l_name']);
 			$email = mysqli_real_escape_string($db, $_POST['email']);
 			$pass = mysqli_real_escape_string($db, $_POST['password']);
 			$pass = md5($pass);
@@ -44,7 +23,7 @@ echo "<script type='text/javascript'>alert('$message');</script>";
 			}
 			else
 			{
-				$entry = mysqli_query($db, "INSERT INTO user_log(name_first, name_last, email, password) VALUES ('$fname', '$lname', '$email', '$pass')"))
+				$entry = mysqli_query($db, "INSERT INTO user_log(name_first, name_last, email, password) VALUES ('$fname', '$lname', '$email', '$pass')");
 
 				if($entry)
 				{
@@ -60,28 +39,3 @@ echo "<script type='text/javascript'>alert('$message');</script>";
 		echo mysqli_error($db);
 		}
 	?>
-<!--
-	<h2>Enter your information</h2>
-	
-	<div id="form">
-		<form name = "reg" method = "post">
-			<table style = "100%" align = "center">
-				<tr>
-					<td><input type="text" name="fname" placeholder="First Name"></td>
-				</tr>
-				<tr>
-					<td><input type="text" name="lname" placeholder="Last Name"></td>
-				</tr>
-				<tr>
-					<td><input type="text" name="email" placeholder="Email"></td>
-				</tr>
-				<tr>
-					<td><input type="password" name = "password" placeholder = "Password"></td>
-				</tr>
-				<tr>
-					<td><button type="submit" name="reg_button">Register</button></td>
-				</tr>
-			</table>
-		</form>
-	</div>
-</body> -->
