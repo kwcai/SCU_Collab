@@ -19,16 +19,24 @@
 			</div>
 			
 			<div id="footerbar">
-				<h2 class="center">Welcome, <em><?php echo $current_user;?>!</em></h2>
+			<!--<h2 class="center">Welcome, <!<em><?php echo $current_user;?>!</em></h2>-->
+				<h2 class="center">Welcome, Wesley!</em></h2>
 			</div>
 			
 			<img class="toggle" src="toggle_sidebar.png" onclick="toggle_sidebar()">
 			
 			<div id="sidebar">
 				<ul id="sidebar_navigation">
-					<li><?php echo $current_user;?></li>
-					<li><h2>Math group</h2></li>
-					<li><h3>Logout</h3></li>
+				<!--<li><?php echo $current_user;?></li>-->
+					<div id="user">
+					</div>
+					<li><h1>wsha@scu.edu</h1></li>
+					<li><h2>Groups</h2></li>
+					<li><h3>Math group</h3></li>
+					<li><h3>COEN 10 study</h3><li>
+					<br>
+					<li><h2>New Group +</h2></li>
+					<li><h4>Logout</h4></li>
 				</ul>
 			</div>
 		</div>
@@ -41,13 +49,13 @@
             
             console.log(sidebar.style.left);
             
-            if(sidebar.style.left == "-200px")
+            if(sidebar.style.left == "-500px")
             {
                 sidebar.style.left = "0px";
 			}
             else
             {
-			sidebar.style.left = "-200px";
+			sidebar.style.left = "-500px";
 			}
 		}
 	</script>
