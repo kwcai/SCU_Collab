@@ -28,6 +28,7 @@ h1 {
 	margin: 0px !important;
 }
 
+/* position all input fields in center */
 ui-input-text, .ui-input-text, .input {
 	position: relative !important;
 	margin: 0 auto 2em !important;
@@ -35,6 +36,7 @@ ui-input-text, .ui-input-text, .input {
 	text-align: center !important;
 	font-size: 1.5em !important;
 }
+
 
 #form {
 	position: relative;
@@ -45,6 +47,7 @@ ui-input-text, .ui-input-text, .input {
 	width: 100%;
 }
 
+/* login and signup button */
 .login, .register {
 	position: relative;
 	margin: 2em auto 2em auto;
@@ -53,6 +56,7 @@ ui-input-text, .ui-input-text, .input {
 	font-size: 1.5em;
 }
 
+/* labels for input fields */
 label {
 	text-align: center;
 	font-weight: bold;
@@ -61,6 +65,7 @@ label {
 	margin: 0px;
 }
 
+/* button styling */
 .customButton, .ui-btn {
 	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff !important;
 	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff !important;
@@ -144,15 +149,21 @@ label {
 	transition: all 0.5s ease-in-out;
 }
 
+#sidebar_navigation li {
+	margin: 0 0 0 1em;
+}
+
+/* Move logout button to bottom of sidebar */
+#sidebar_navigation li h3 {
+	position: absolute !important;
+	bottom: 0 !important;
+	color: white !important;
+}
+
 .toggle {
 	position: fixed;
 	right: 10px;
 	top: 10px;
 	width: 50px;
 	height: 50px;
-}
-
-#logout {
-	position: relative;
-	bottom: 0px;
 }

@@ -2,30 +2,37 @@
 <html lang="en">
 	<head>
 		<title>Home Page</title>
-		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="styles.css">
+		<link rel="stylesheet" type = "text/css" href="styles.css" />
+		
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+		<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
+		<script src="home.js"></script>
 	</head>
+	
 	<body>
-		<div id="headerbar">
-			<h1 class="center">SCU Collab</h1>
-		</div>
-		
-		<div id="footerbar">
-			<h2 class="center">Welcome, <em><?php echo $current_user;?>!</em></h2>
-		</div>
-		
-		<img class="toggle" src="toggle_sidebar.png" onclick="toggle_sidebar()">
-
-		<div id="sidebar">
-			<ul>
-				<li><?php echo $current_user;?></li>
-				<li><h2>Math group</h2></li>
-				<li id="logout"><h3>Logout</h3></li>
-			</ul>
+		<div data-role"page" id="home">
+			<div data-role="header" id="headerbar">
+				<h1 class="center">SCU Collab</h1>
+			</div>
+			
+			<div id="footerbar">
+				<h2 class="center">Welcome, <em><?php echo $current_user;?>!</em></h2>
+			</div>
+			
+			<img class="toggle" src="toggle_sidebar.png" onclick="toggle_sidebar()">
+			
+			<div id="sidebar">
+				<ul id="sidebar_navigation">
+					<li><?php echo $current_user;?></li>
+					<li><h2>Math group</h2></li>
+					<li><h3>Logout</h3></li>
+				</ul>
+			</div>
 		</div>
 	</body>
-	
-	
 	
 	<script>
         function toggle_sidebar()
@@ -40,7 +47,7 @@
 			}
             else
             {
-                sidebar.style.left = "-200px";
+			sidebar.style.left = "-200px";
 			}
 		}
 	</script>
