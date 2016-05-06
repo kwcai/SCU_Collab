@@ -20,6 +20,9 @@
 		}*/
 		include '../svr_config.php';
 
+		$message = "wrong answer";
+echo "<script type='text/javascript'>alert('$message');</script>";
+
 		if(isset($_POST['register']))
 		{
 			$fname = mysqli_real_escape_string($db, $_POST['fname']);
@@ -35,7 +38,7 @@
 			//Make sure all fields are filled
 
 
-			if(mysqli_num_rows($result) != 0)
+			if(mysqli_num_rows($result) == 1)
 			{
 				echo "exist";
 			}
