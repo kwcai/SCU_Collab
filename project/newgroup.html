@@ -17,29 +17,31 @@
 		<script src="js/index.js"></script>
 	</head>
 	<body>
-		<div data-role="page" id="create-group">
+		<div data-role="page">
 			<div data-role="header">
 				<h1>Create a New Group</h1>
 			</div>
 			
-			<div id="form">
+			<div class="form">
 				<form id="new-group" method="post" action="newgroup.php" data-ajax="false">
-					<!---->
 					<fieldset>
-						<div data-role="ui-fieldcontain">
+						<div class="input" data-role="ui-fieldcontain">
 							<label for=g_name>Group Name</label>
 							<input type="text" name="g_name" placeholder="Group Name" />
 						</div>
-						<div data-role="ui-fieldcontain">
-							<label for="description">Group Description</label>
-							<textarea rows="5" name="description" placeholder= "Group Description"></textarea>
-						</div>
-						<div data-role="ui-fieldcontain">
+						<div class="input" data-role="ui-fieldcontain">
 							<label for="password">Group Password</label>
 							<input type="password" name="password" placeholder= "Group Password" />
 						</div>
+						<div class="input" data-role="ui-fieldcontain">
+							<label for="description">Group Description</label>
+							<textarea rows="10" name="description" placeholder= "Group Description"></textarea>
+						</div>
 						<!--<input type="submit" class="customButton" value="Submit" data-rule="none">-->
-						<button class="customButton" data-role="none" value="Submit">Submit</button>
+						<!--<button class="customButton" data-role="none" value="Submit">Submit</button>-->
+						<div class="register">
+							<button id="groupbtn" name="myGroupButton" class="customButton" data-role="none" value="Login" >Submit</button>
+						</div>
 					</fieldset>
 				</form>
 			</div>
