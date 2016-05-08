@@ -40,7 +40,7 @@ $('document').ready(function()
 				{
 					localStorage.login="true";
 					localStorage.email=$("#email").val();
-					window.location.href = "home.php";
+					window.location.href = "home.html";
 					alert("You are now logged in");
 				}
 				else if(data=="failure")
