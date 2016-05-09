@@ -32,17 +32,15 @@ $('document').ready(function()
 		$.ajax({
 
 			type: "POST",
-			url: "index.php",
+			url: "../index.php",
 			data: data,
 			success : function(data)
 			{
-				alert(data);
-
 				if(data=="success")
 				{
 					localStorage.login="true";
 					localStorage.user=$("#username").val();
-					//window.location.href = "home.html";
+					window.location.href = "home.html";
 					alert("You are now logged in");
 				}
 				else if(data=="failure")

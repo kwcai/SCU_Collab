@@ -10,7 +10,24 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
 		<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
-		<script src="home.js"></script>
+		<script src="logout.js"></script>
+
+		<!-- Check if user is already logged in // Put into own js file later-->
+		<script type="text/javascript">
+
+			var url = window.location.pathname;
+			var filename = url.substring(url.lastIndexOf('/')+1);
+
+			if(localStorage.login=="true" && filename == 'index.html')
+			{
+				window.location.href="home.html";
+			}
+			else if(localStorage.login=="false" && filename != 'index.html')
+			{
+				window.location.href="index.html";
+			}
+
+		</script>
 	</head>
 	
 	<body>
@@ -21,7 +38,7 @@
 			
 			<div id="homescreen">
 			<!--<h2>Welcome, <!<em><?php echo $current_user;?>!</em></h2>-->
-				<h2>Welcome, Wesley!</h2>
+				<h2 id = "welcome_msg"></h2>
 			</div>
 			
 			<img class="toggle" src="toggle_sidebar.png" onclick="toggle_sidebar()">
@@ -47,13 +64,16 @@
 					</div>
 					
 					<div class="sidebarlogoutfooter">
-						<h2>Logout</h2>
+						<h2><button id="logout-btn">Logout</button></h2>
 					</div>
 				</ul>
 			</div>
 		</div>
 	</body>
 	
+	<script>
+		//document.getElementById("welcome_msg").innerHTML = "Welcome" . localStorage.user;
+	</script>
 	<script>
         function toggle_sidebar()
         {
