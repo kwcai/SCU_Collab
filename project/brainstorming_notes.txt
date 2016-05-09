@@ -1,0 +1,47 @@
+Group template
+	Sidebar
+		Members
+	{Group name}  within header tags
+	
+Group home page should show __ upon clicking the group
+Events
+	name of event
+	date, location
+Forum
+Members
+
+same sidebar for all three html pages
+perhaps implement search bar in sidebar for groups
+
+
+
+
+HTML template for Forum, Events, and Members
+Javascript file
+	onload, call php to return data
+php
+	echo/retrieve data
+	can't be stored locally
+	makes a call to the server using Javascript,
+	so we need a JS file for each page
+	
+Do we need unique files?
+
+When a user clicks a group name,
+they need Javascript to make a server request 
+to check if they're in the group.
+
+
+Show groups in sidebar, which requires a server call.
+
+1. Test group creation
+	Create group with kcai
+	Test member page
+2. Test group join
+3. Test group leave
+
+
+To display search results, use
+	Javascript
+		or
+	php, which echos html tags/tables
