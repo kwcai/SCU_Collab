@@ -144,6 +144,28 @@ h3 {
 	margin: 0 0 0 1em !important;
 }
 
+h4 {
+	position: relative !important;
+	font-weight: bold !important;
+	font-size: 1.5em !important;
+	font-style: bold !important;
+	color: white !important;
+}
+
+/* event listings */
+.eventlisting, .eventlistinglight {
+	text-align: center !important;
+}
+
+.eventlisting h4 {
+	padding: 1em 0 !important;
+}
+
+.eventlistinglight h4 {
+	padding: 1em 0 !important;
+	background-color: #ff6666;
+}
+
 #sidebar_navigation li {
 	margin: 0.5em 0 0.5em 1em;
 }
@@ -158,6 +180,19 @@ ul li ul {
 
 .groups h2 {
 	margin: 0 0 0 0.5em !important;
+}
+
+.groupelement, .groupelementlight {
+	text-align: center !important;
+}
+
+.groupelement h2 {
+	padding: 1em 0 !important;
+}
+
+.groupelementlight h2 {
+	padding: 1em 0 !important;
+	background-color: #ff6666;
 }
 
 .sidebaruserheader h2 {
