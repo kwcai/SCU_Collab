@@ -17,7 +17,6 @@ html {
 }
 
 /***** index, group, and register *****/
-
 h1 {
 	position: relative !important;
 	text-align: center !important;
@@ -29,7 +28,7 @@ h1 {
 	background: #ff6666 !important;
 }
 
-/* position all input fields in center */
+/* input fields */
 ui-input-text, .ui-input-text, .input {
 	position: relative !important;
 	margin: 1em auto 1em !important;
@@ -57,7 +56,7 @@ ui-input-text, .ui-input-text, .input {
 	font-size: 1.5em;
 }
 
-/* labels for input fields */
+/* input field labels */
 label {
 	text-align: center;
 	font-weight: bold;
@@ -96,50 +95,6 @@ label {
 	text-shadow:0px 1px 0px #ffffff !important;
 }
 
-/***** Home page and sidebar *****/
-
-/*#headerbar {
-	position: absolute;
-	top: 0px;
-	width: 100%;
-	height: 20%;
-	background-color: #ff6666;
-}*/
-
-#emailbar {
-	position: relative;
-	top: 0px;
-	width: 100%;
-	height: 20%;
-	background-color: #333333;
-}
-
-/*.center {
-	position: absolute;
-	transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-}*/
-
-#container {
-	position: fixed;
-	width: 80%;
-	height: 100%;
-	margin: 0 auto;
-	left: 0px;
-	background: black;
-	/*-webkit-transition-duration: 0.3s;
-	-moz-transition-duration: 0.3s;
-	-o-transition-duration: 0.3s;
-	transition-duration: 0.3s;*/
-}
-
-#sidebar ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
 #sidebar {
 	position: fixed;
 	display: inline-block;
@@ -151,16 +106,13 @@ label {
 	transition: all 0.5s ease-in-out;
 }
 
+#sidebar ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
 
-/*#footerbar {
-	position: absolute;
-	bottom: 0px;
-	width: 100%;
-	height: 100%;
-}*/
-
-/* Welcome, ___!*/
-#footerbar {
+#homescreen {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
@@ -176,17 +128,15 @@ label {
 h2 {
 	position: relative !important;
 	font-weight: bold !important;
-	font-size: 2.5em !important;
-	font-style: bold !important;
+	font-size: 2em !important;
 	color: white !important;
 	margin: 0px !important;
+	width: 100% !important;
 }
 
 /* list of groups */
 h3 {
 	position: relative !important;
-	/*text-align: center !important;*/
-	
 	font-weight: bold !important;
 	font-size: 1.5em !important;
 	font-style: bold !important;
@@ -194,37 +144,42 @@ h3 {
 	margin: 0 0 0 1em !important;
 }
 
-/* username */
-h5 {
-	position: relative !important;
-	/*text-align: center !important;*/
-	
-	font-weight: bold !important;
-	font-size: 2em !important;
-	font-style: bold !important;
-	color: white !important;
-	margin: 0 !important;
-	
-}
-
 #sidebar_navigation li {
-	margin: 0 0 0 1em;
+	margin: 0.5em 0 0.5em 1em;
 }
 
-#sidebar_navgiation li h1 {
-	background-color: #333333 !important;
-	color: orange !important;
-	
+ul li ul {
+	display: none;
 }
 
-/* logout button */
-#sidebar_navigation li h4 {
+.groups {
+	margin: 3em 0;
+}
+
+.groups h2 {
+	margin: 0 0 0 0.5em !important;
+}
+
+.sidebaruserheader h2 {
+	position: relative !important;
+	text-align: center;
+	font-size: 2em !important;
+	padding: 0.5em 0 !important;
+	background: #595959;
+	bottom: 0px;
+}
+
+.sidebarlogoutfooter {
+	width: 100%;
+}
+
+.sidebarlogoutfooter h2 {
 	position: absolute !important;
-	bottom: 0 !important;
-	color: white !important;
-	margin: auto;
-	font-size: 2em;
-	background-color: #333333;
+	text-align: center;
+	font-size: 2em !important;
+	padding: 0.25em 0 !important;
+	background: #595959;
+	bottom: 0px;
 }
 
 /* toggle button for sidebar */
@@ -234,4 +189,11 @@ h5 {
 	top: 1em;
 	width: 3em;
 	height: 3em;
+}
+
+/* for screen sizes less than or equal to 360px */
+@media only screen and (max-width: 360px) {
+	ui-input-text, .ui-input-text, .input {
+		width: 90% !important;
+	}
 }

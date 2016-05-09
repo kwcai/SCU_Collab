@@ -19,7 +19,7 @@
 				<h1>SCU Collab</h1>
 			</div>
 			
-			<div id="footerbar">
+			<div id="homescreen">
 			<!--<h2>Welcome, <!<em><?php echo $current_user;?>!</em></h2>-->
 				<h2>Welcome, Wesley!</h2>
 			</div>
@@ -28,19 +28,27 @@
 			
 			<div id="sidebar">
 				<ul id="sidebar_navigation">
-				<!--<li><?php echo $current_user;?></li>-->
-					<div id="user">
+					<div class="sidebaruserheader">
+						<h2>wsha@scu.edu</h2>
 					</div>
-					<div id="emailbar">
-						<li><h5>wsha@scu.edu</h5></li>
+					
+					<ul class="list">
+						<li>
+							<a><h2 class="groups">Groups &#9660</h2></a>
+							<ul>
+								<li><h3>Math group</h3></li>
+								<li><h3>COEN 10 study</h3><li>
+							</ul>
+						</li>
+					</ul>
+					
+					<div class="groups">
+						<h2>New Group +</h2>
 					</div>
-					<li><h2>Groups</h2></li>
-				<!--<li><a href="groups.html">Groups</a></li>-->
-					<li><h3>Math group</h3></li>
-					<li><h3>COEN 10 study</h3><li>
-					<br>
-					<li><h2>New Group +</h2></li>
-					<li><h4>Logout</h4></li>
+					
+					<div class="sidebarlogoutfooter">
+						<h2>Logout</h2>
+					</div>
 				</ul>
 			</div>
 		</div>
@@ -62,5 +70,10 @@
 			sidebar.style.left = "-80%";
 			}
 		}
+		
+		$('.list > li a').click(function() {
+			$(this).parent().find('ul').toggle();
+			/*$(this).text('<h2 class="groups">Groups &#9654</h2>');*/
+		});
 	</script>
 </html>
