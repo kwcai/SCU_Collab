@@ -1,6 +1,0 @@
-redirect after submit
-
-show group name
-
-"make sidebar separate html file"
-	hopefully, just including this file will insert the sidebar in everyplace we put it
