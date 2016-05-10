@@ -22,7 +22,7 @@ if ($stmt = $db->prepare($query))
 
     while ($stmt->fetch())
 	{
-        printf ("%s (%s)\n", $group_name);
+        printf ("%s\n", $group_name);
     }
 
     $stmt->close();
