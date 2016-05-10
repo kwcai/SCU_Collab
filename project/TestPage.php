@@ -1,6 +1,6 @@
 <?php
 
-	include "../../svr_config.php";
+	include('../../svr_config.php');
 
 	// If statements to choose function
 
@@ -11,9 +11,9 @@
 
 	}*/
 
-	if(isset($_GET['func'])
+	if(isset($_GET['function']))
 	{
-		if($_GET['func'] == "time")
+		if($_GET['function'] == "posts")
 		{
 			showPosts();
 		}
@@ -26,7 +26,9 @@
 	/* Call when param is forum */
 	function showPosts() {
 
-		if($result = $db->$query("SELECT * FROM posts WHERE group_id = $g_id ORDER by ID DESC LIMIT 10"))
+		global $db;
+
+		if($result = $db->query("SELECT * FROM posts WHERE group_id = $g_id ORDER by ID DESC LIMIT 10"))
 		{
 
 			echo "<table>";
