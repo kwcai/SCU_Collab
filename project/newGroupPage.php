@@ -48,41 +48,38 @@
 			$stmt2->bind_param('siss', $g_name, $u_id, $pass, $description);
         	if($stmt2->execute() == false)
 			{
-				echo "Insert failed: " . $db->error;
+				echo "Problem creating group";
 			}
 		    else
+		    {
 				printf("%d Row inserted.\n", $stmt2->affected_rows);
 
-          //mysqli_query($db, "INSERT INTO usersTOgroups (user_id, group_id) VALUES ($u_id, SELECT group_id FROM groups WHERE group_name = $g_name)");
-          	/*$tpl_file = "group_template.html";
-	          $tpl_path = "templates/";
-          	$group_path = "groups/";
+				$tpl_file = "group_template.html";
+				$tpl_path = "templates/";
+				$group_path = "groups/";
 
-          	$data = array(
+				$data = array(
            		'g_name' => '',
           		'description' => ''
           		);
 
-          	$data['g_name'] = $_POST["g_name"];
-           	$data['description'] = $_POST["description"];
+          		$data['g_name'] = $_POST["g_name"];
+           		$data['description'] = $_POST["description"];
 
-          	$tpl = file_get_contents($tpl_path.$tpl_file);
+          	  	$tpl = file_get_contents($tpl_path.$tpl_file);
 
-	          $placeholders = array("{group_name}", "{description}");
+	          	$placeholders = array("{group_name}", "{description}");
 
-	          $new_groupfile = str_replace($placeholders, $data, $tpl);
+	         	$new_groupfile = str_replace($placeholders, $data, $tpl);
 
-	          $string = $data['g_name'];
-	          $string = str_replace(' ', '', $string);
+				$string = $data['g_name'];
+				$string = str_replace(' ', '', $string);
 
-	          $file = $string.".html";
+				$file = $string.".html";
 
-	          file_put_contents($group_path.$file, $new_groupfile);
-	          echo $file;
-				}
+				file_put_contents($group_path.$file, $new_groupfile);
+				echo $file;
+			}
 				//else
-				{
-				  echo "There seems to be a problem";
-				}*/
         }
 ?>
