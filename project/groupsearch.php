@@ -12,15 +12,7 @@ Groups Table
 
 include('../svr_config.php');
 
-$query = $_GET["q"];
-
-$stmt1 = $db-prepare("SELECT group_name FROM groups WHERE group_name = ?");
-$stmt1->bind_param("s", $query);
-
-if($stmt1->execute() == false)
-{
-	echo "Failed: " . $db->error;
-}
+$query = $_GET["key"];
 
 if ($stmt = $db->prepare($query))
 {
