@@ -34,14 +34,15 @@
 					</div>
 					
 					<div>
-						<form id="search-group" method="post" action="searchgroup.php" data-ajax="false">
+						<form id="search-group" method="post" action="groupsearch.php" data-ajax="false">
 							<fieldset>
 								<div class="searchbar" data-role="ui-fieldcontain">
-									<input type="text" placeholder="Search for a group"/>
+									<input type="text" name="typeahead" onkeyup="groupResults(this.value)" placeholder="Search for a group"/>
 								</div>
 								<img class="searchicon" src="search_icon.png" onclick="search_groups()">
 							</fieldset>
 						</form>
+						<div id="groupsearch"></div>
 					</div>
 					
 					<ul class="list">
@@ -87,5 +88,15 @@
 			$(this).parent().find('ul').toggle();
 			/*$(this).text('<h2 class="groups">Groups &#9654</h2>');*/
 		});
+		
+		$(document).ready(function()
+		{
+			$('input.typeahead').typeahead({
+				name: 'typeahead',
+				remote:'search.php?key=%QUERY',
+				limit : 10
+			});
+		});
+	}
 	</script>
 </html>
