@@ -229,6 +229,14 @@ ul li ul {
 	background-color: #ff6666;
 }
 
+.leavegroup h2 {
+	position: absolute !important;
+	text-align: center;
+	padding: 0.25em 0;
+	bottom: 0px;
+	background-color: #e60000;
+}
+
 .sidebaruserheader h2 {
 	position: relative !important;
 	text-align: center;

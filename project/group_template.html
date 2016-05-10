@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Home Page</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+		<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
+		<script src="logout.js"></script>
+		<script src="typeahead.jquery.min.js"></script>
+
+		<!-- Check if user is already logged in // Put into own js file later-->
+		<script type="text/javascript">
+
+			var url = window.location.pathname;
+			var filename = url.substring(url.lastIndexOf('/')+1);
+
+			if(localStorage.login=="true" && filename == 'index.html')
+			{
+				window.location.href="home.html";
+			}
+			else if(localStorage.login=="false" && filename != 'index.html')
+			{
+				window.location.href="index.html";
+			}
+
+		</script>
+	</head>
+	
+	<body>
+		<div data-role="page">
+			<div data-role="header">
+				<h1>{Group name}</h1>
+			</div>
+			
+			<div>
+				<div class="groupelement">
+					<h2>Events</h2>
+				</div>
+				<div class="groupelementlight">
+					<h2>Forum</h2>
+				</div>
+				<div class="groupelement">
+					<h2>Members</h2>
+				</div>
+				<div class="leavegroup">
+					<h2>Leave Group</h2>
+				</div>
+			</div>
+				
+			</div>
+			
+			<img class="toggle" src="toggle_sidebar.png" onclick="toggle_sidebar()">
+			
+			<div id="sidebar">
+				<ul id="sidebar_navigation">
+					<div class="sidebaruserheader">
+						<h2>wsha@scu.edu</h2>
+					</div>
+					
+					<div>
+						<form id="search-group" method="post" action="groupsearch.php" data-ajax="false">
+							<fieldset>
+								<div class="searchbar" data-role="ui-fieldcontain">
+									<input type="text" name="typeahead" onkeyup="groupResults(this.value)" placeholder="Search for a group"/>
+								</div>
+								<img class="searchicon" src="search_icon.png" onclick="search_groups()">
+							</fieldset>
+						</form>
+						<div id="groupsearch"></div>
+					</div>
+					
+					<ul class="list">
+						<li>
+							<a><h2 class="groups">Groups &#9660</h2></a>
+							<ul>
+								<li><h3>Math group</h3></li>
+								<li><h3>COEN 10 study</h3><li>
+							</ul>
+						</li>
+					</ul>
+					
+					<div class="groups">
+						<h2>New Group +</h2>
+					</div>
+					
+					<div class="sidebarlogoutfooter">
+						<h2>Logout</h2>
+					</div>
+				</ul>
+			</div>
+		</div>
+	</body>
+	
+	<script>
+		//document.getElementById("welcome_msg").innerHTML = "Welcome" . localStorage.user;
+	</script>
+	<script>
+        function toggle_sidebar()
+        {
+            var sidebar = document.getElementById("sidebar");
+            
+            console.log(sidebar.style.left);
+            
+            if(sidebar.style.left == "-80%")
+            {
+                sidebar.style.left = "0px";
+			}
+            else
+            {
+			sidebar.style.left = "-80%";
+			}
+		}
+		
+		$('.list > li a').click(function() {
+			$(this).parent().find('ul').toggle();
+			/*$(this).text('<h2 class="groups">Groups &#9654</h2>');*/
+		});
+		
+		$(document).ready(function()
+		{
+			$('input.typeahead').typeahead({
+				name: 'typeahead',
+				remote:'groupsearch.php?key=%QUERY',
+				limit : 10
+			});
+		});
+	</script>
+</html>
