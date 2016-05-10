@@ -47,6 +47,15 @@ ui-input-text, .ui-input-text, .input {
 	width: 100%;
 }
 
+.searchbar {
+	position: relative;
+	margin-left: 0 !important;
+	position: relative !important;
+	font-size: 1em !important;
+	width: 80% !important;
+	float: left;
+}
+
 /* login and signup/register button */
 .login, .register {
 	position: relative;
@@ -152,18 +161,43 @@ h4 {
 	color: white !important;
 }
 
+/* Group details */
+h5 {
+	color: white;
+}
+
+.left {
+	float: left;
+	margin-left: 1em;
+}
+
+.right {
+	float: right;
+	margin-right: 1em;
+}
+
 /* event listings */
 .eventlisting, .eventlistinglight {
-	text-align: center !important;
+	/*text-align: center !important;*/
+	background-color: #ff6666;
 }
 
 .eventlisting h4 {
-	padding: 1em 0 !important;
 }
 
-.eventlistinglight h4 {
+/*.eventlistinglight h4 {
 	padding: 1em 0 !important;
 	background-color: #ff6666;
+}*/
+
+.memberlisting, .topiclisting {
+	text-align: center !important;
+}
+
+.memberlisting h4, .topiclisting h4 {
+	padding: 0.5em 0 !important;
+	background-color: #ff6666;
+	position: relative !important;
 }
 
 #sidebar_navigation li {
@@ -222,6 +256,12 @@ ul li ul {
 	position: fixed;
 	right: 1em;
 	top: 1em;
+	width: 3em;
+	height: 3em;
+}
+
+.searchicon {
+	vertical-align: middle;
 	width: 3em;
 	height: 3em;
 }
