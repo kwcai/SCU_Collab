@@ -3,7 +3,6 @@
 	<head>
 		<title>Create a New Group</title>
 		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="styles.css">
 		
 		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
 		
@@ -11,36 +10,40 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
 		<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
 		<script src="newGroupPage.js"></script>
+
 	</head>
 	<body>
-		<div data-role="page">
+		<div data-role="page" id="create-group">
 			<div data-role="header">
 				<h1>Create a New Group</h1>
 			</div>
 			
-			<div class="form">
-				<form id="new-group" method="post" action="newgroup.php" data-ajax="false">
+			<div id="form">
+				<form id="new-group" method="post" data-ajax="false">
+					<!---->
 					<fieldset>
-						<div class="input" data-role="ui-fieldcontain">
+						<div data-role="ui-fieldcontain">
 							<label for=g_name>Group Name</label>
-							<input type="text" name="g_name" placeholder="Group Name" />
+							<input type="text" id="g_name" name="g_name" placeholder="Group Name" />
 						</div>
-						<div class="input" data-role="ui-fieldcontain">
+						<div data-role="ui-fieldcontain">
 							<label for="description">Group Description</label>
-							<textarea rows="10" name="description" placeholder= "Group Description"></textarea>
+							<textarea rows="5" name="description" placeholder= "Group Description"></textarea>
 						</div>
-						<div class="input" data-role="ui-fieldcontain">
+						<div data-role="ui-fieldcontain">
 							<label for="password">Group Password</label>
 							<input type="password" name="password" placeholder= "Group Password" />
 						</div>
 						<!--<input type="submit" class="customButton" value="Submit" data-rule="none">-->
-						<!--<button class="customButton" data-role="none" value="Submit">Submit</button>-->
-						<div class="register">
-							<button id="groupbtn" name="myGroupButton" class="customButton" data-role="none" value="Login" >Submit</button>
-						</div>
+						<button id="new-group-btn">Submit</button>
 					</fieldset>
 				</form>
 			</div>
 		</div>
 	</body>
-</html>
+
+
+    
+
+
+  </html>
