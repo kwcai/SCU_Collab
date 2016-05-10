@@ -30,7 +30,7 @@ $(document).ready(function()
 
 		var data = $("#new-group").serialize();
 		var user = localStorage.getItem('user');
-    var data = data + "&user=" + user;
+    	var data = data + "&user=" + user;
     
     alert(data);
 
