@@ -1,6 +1,6 @@
 <?php
 
-	include "../../svr_config.php";
+	include('../../svr_config.php');
 
 	// If statements to choose function
 
@@ -11,9 +11,9 @@
 
 	}*/
 
-	if(isset($_GET['func'])
+	if(isset($_GET['function']))
 	{
-		if($_GET['func'] == "time")
+		if($_GET['function'] == "posts")
 		{
 			showPosts();
 		}
@@ -25,8 +25,17 @@
 
 	/* Call when param is forum */
 	function showPosts() {
+ 
+    global $db;
+    $group_page = "Test Page"; // replace as well
+    
+    $stmt = $db->query("SELECT `group_id` FROM `groups` WHERE group_name = '$group_page'"); //would replace in template
+    $row = $stmt->fetch_assoc();
+    $g_id = $row['group_id'];
+    
+    echo $g_id;
 
-		if($result = $db->$query("SELECT * FROM posts WHERE group_id = $g_id ORDER by ID DESC LIMIT 10"))
+		if($result = $db->query("SELECT * FROM `posts` WHERE group_id = '$g_id' ORDER by `post_id` DESC LIMIT 10"))
 		{
 
 			echo "<table>";
@@ -39,10 +48,12 @@
 			}
 
 			echo "<table>";
+      
+      		$result->free();
 
 		}
-
-		$result->free();
+    else
+      die($db->error);
 
 	}
 
