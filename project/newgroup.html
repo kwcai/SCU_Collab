@@ -41,6 +41,70 @@
 					</fieldset>
 				</form>
 			</div>
+			
+			<img class="toggle" src="toggle_sidebar.png" onclick="toggle_sidebar()">
+			
+			<div id="sidebar">
+				<ul id="sidebar_navigation">
+					<div class="sidebaruserheader">
+						<h2>wsha@scu.edu</h2>
+					</div>
+					
+					<div>
+						<form id="search-group" method="post" action="groupsearch.php" data-ajax="false">
+							<fieldset>
+								<div class="searchbar" data-role="ui-fieldcontain">
+									<input type="text" name="typeahead" placeholder="Search for a group"/>
+								<!--<button id="searchbtn" name="button" class="searchButton" data-role="none" value="Login" >Search</button>-->
+								</div>
+								<img type="submit" class="searchicon" src="search_icon.png" name="button">
+							</fieldset>
+						</form>
+						<div id="groupsearch"></div>
+					</div>
+					
+					<ul class="list">
+						<li>
+							<a><h2 class="groups">Groups &#9660</h2></a>
+							<ul id="grouplist">
+								<li>Math group</li>
+							</ul>
+						</li>
+					</ul>
+					
+					<div class="groups">
+						<a href="newgroup.html"><h2>New Group +</h2></a>
+					</div>
+					
+					<div class="sidebarlogoutfooter">
+						<h2>Logout</h2>
+					</div>
+				</ul>
+			</div>
+			
 		</div>
 	</body>
+	
+	<script>
+        function toggle_sidebar()
+        {
+            var sidebar = document.getElementById("sidebar");
+            
+            console.log(sidebar.style.left);
+            
+            if(sidebar.style.left == "-80%")
+            {
+                sidebar.style.left = "0px";
+			}
+            else
+            {
+			sidebar.style.left = "-80%";
+			}
+		}
+		
+		$('.list > li a').click(function() {
+			$(this).parent().find('ul').toggle();
+			/*$(this).text('<h2 class="groups">Groups &#9654</h2>');*/
+		});
+	</script>
 </html>
