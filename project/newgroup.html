@@ -10,11 +10,52 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
 		<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
+		<script src="logout.js"></script>
+
+		<!-- Check if user is already logged in // Put into own js file later-->
+		<script type="text/javascript">
+
+			var url = window.location.pathname;
+			var filename = url.substring(url.lastIndexOf('/')+1);
+
+			if(localStorage.login=="true" && filename == 'index.html')
+			{
+				window.location.href="home.html";
+			}
+			else if(localStorage.login=="false" && filename != 'index.html')
+			{
+				window.location.href="index.html";
+			}
+
+		</script>
 	</head>
 	<body>
 
 		<div data-role="page">
 			<script src="newGroupPage.js"></script>
+			<script>
+		        function toggle_sidebar()
+		        {
+		            var sidebar = document.getElementById("sidebar");
+		            
+		            console.log(sidebar.style.left);
+		            
+		            if(sidebar.style.left == "-80%" || sidebar.style.left == "")
+		            {
+		                sidebar.style.left = "0px";
+					}
+		            else
+		            {
+					sidebar.style.left = "-80%";
+					}
+				}
+				
+				$('.list > li a').click(function() {
+					$(this).parent().find('ul').toggle();
+					/*$(this).text('<h2 class="groups">Groups &#9654</h2>');*/
+				});
+			</script>
+			<script src="group_display.js"></script>
 			<div data-role="header">
 				<h1>Create a New Group</h1>
 			</div>
@@ -86,29 +127,4 @@
 			
 		</div>
 	</body>
-
-
-	
-	<script>
-        function toggle_sidebar()
-        {
-            var sidebar = document.getElementById("sidebar");
-            
-            console.log(sidebar.style.left);
-            
-            if(sidebar.style.left == "-80%")
-            {
-                sidebar.style.left = "0px";
-			}
-            else
-            {
-			sidebar.style.left = "-80%";
-			}
-		}
-		
-		$('.list > li a').click(function() {
-			$(this).parent().find('ul').toggle();
-			/*$(this).text('<h2 class="groups">Groups &#9654</h2>');*/
-		});
-	</script>
 </html>

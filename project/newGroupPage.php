@@ -51,7 +51,7 @@
 			}
 		    else
 		    {
-				printf("%d Row inserted.\n", $stmt2->affected_rows);
+				//printf("%d Row inserted.\n", $stmt2->affected_rows);
 
 				/* If the group is successfully created, add relationship for creator and group 
 				   Also add the relationship for posts and group */

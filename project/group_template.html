@@ -2,7 +2,7 @@
 	<head> 
 		<title>{group_name} Home Page</title> 
 		
-		<link rel="stylesheet" type="text/css" href="styles.css">
+		<link rel="stylesheet" type="text/css" href="../styles.css">
 		
 		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
 		
@@ -27,8 +27,9 @@
 	</head>
 	<body>
 		<div data-role="page">
+		<script src = "{group_link}.js"></script>
 			<div data-role="header">
-				<h1>{Group name}</h1>
+				<h1>{group_name}</h1>
 			</div>
 			
 			<div>
@@ -44,9 +45,17 @@
 				<div class="leavegroup">
 					<h2>Leave Group</h2>
 				</div>
+			</div> -->
+
+			{group_name}<br /> 
+		
+			<a href="{group_link}post.html">Post</a>
+		
+			<div id = "content">
+			
 			</div>
 			
-			<img class="toggle" src="toggle_sidebar.png" onclick="toggle_sidebar()">
+			<img class="toggle" src="../toggle_sidebar.png" onclick="toggle_sidebar()">
 			
 			<div id="sidebar">
 				<ul id="sidebar_navigation">
@@ -61,7 +70,7 @@
 									<input type="text" name="typeahead" placeholder="Search for a group"/>
 								<!--<button id="searchbtn" name="button" class="searchButton" data-role="none" value="Login" >Search</button>-->
 								</div>
-								<img type="submit" class="searchicon" src="search_icon.png" name="button">
+								<img type="submit" class="searchicon" src="../search_icon.png" name="button">
 							</fieldset>
 						</form>
 						<div id="groupsearch"></div>
@@ -76,7 +85,7 @@
 					</ul>
 					
 					<div class="groups">
-						<a href="newgroup.html"><h2>New Group +</h2></a>
+						<a href="http://students.engr.scu.edu/~kcai/SCU_Collab/newgroup.html"><h2>New Group +</h2></a>
 					</div>
 					
 					<div class="sidebarlogoutfooter">
@@ -112,7 +121,7 @@
 				/*$(this).text('<h2 class="groups">Groups &#9654</h2>');*/
 			});
 		</script>
-		<script src = "{group_link}.js"></script>
+		
 		
 	</head> 
 	<!--<body> 

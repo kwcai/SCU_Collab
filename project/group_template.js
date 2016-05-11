@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-	alert("Document is ready");
+	//alert("Document is ready");
 
 	function showPosts() {
 		$.ajax({

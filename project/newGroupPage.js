@@ -2,7 +2,7 @@ $(document).ready(function()
 {
 	/* form validation rules */
 
-	alert("document is ready");
+	//alert("document is ready");
 
 	$("#new-group").validate({
 
@@ -28,7 +28,7 @@ $(document).ready(function()
 
 	function newGroupPage(){
 
-		alert("Function called");
+		//alert("Function called");
 
 		var data = $("#new-group").serialize();
 		var user = localStorage.getItem('user');
@@ -36,15 +36,23 @@ $(document).ready(function()
     	//var link = $('#g_name').val();
     	//link = str.replace(/\s/g, '');
     
-   	 alert(data);
+   	 	//alert(data);
+   	 	//alert(link);
 
 		$.ajax({ 
 		 url: 'newGroupPage.php',
          data: data,
          type: "POST",
          success: function(output) {
-                      alert(output);
-                      //window.location.href = "/groups/"+link+".html";
+                      //alert(output);
+                      if(output == "This Group Name has already been taken")
+                      {
+                      	alert(output);
+                      }
+                      else {
+                      	//alert(location.href)
+                      window.location.replace("/~kcai/SCU_Collab/groups/"+output);
+                  	  }
                   }
 		});
     /*var xmlhttp = new XMLHttpRequest();
