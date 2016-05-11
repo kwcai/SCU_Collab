@@ -12,7 +12,13 @@ Groups Table
 
 include('../svr_config.php');
 
-$query = $_GET["key"];
+$search = $_GET["key"];
+
+$query = "SELECT group_name FROM groups WHERE group_name = ?"
+
+$query->bind_param("s", $search);
+
+$array = array();
 
 if ($stmt = $db->prepare($query))
 {
@@ -22,12 +28,14 @@ if ($stmt = $db->prepare($query))
 
     while ($stmt->fetch())
 	{
-        printf ("%s\n", $group_name);
+		$array[] = $group_name;
+        /*printf ("%s\n", $group_name);*/
     }
 
     $stmt->close();
 }
 
+echo json_encode($array);
 
 /*while($row = mysql_fetch_assoc($query))
 {
