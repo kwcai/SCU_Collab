@@ -205,6 +205,10 @@ h5 {
 	color: white;
 }
 
+a {
+	text-decoration: none;
+}
+
 .left {
 	float: left;
 	margin-left: 1em;

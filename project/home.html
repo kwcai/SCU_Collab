@@ -12,6 +12,7 @@
 		<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
 		<script src="logout.js"></script>
 		<script src="typeahead.jquery.min.js"></script>
+		<script src="group_display.js"></script>
 
 		<!-- Check if user is already logged in // Put into own js file later-->
 		<script type="text/javascript">
@@ -66,15 +67,14 @@
 					<ul class="list">
 						<li>
 							<a><h2 class="groups">Groups &#9660</h2></a>
-							<ul>
-								<li><h3>Math group</h3></li>
-								<li><h3>COEN 10 study</h3><li>
+							<ul id="grouplist">
+								<li>Math group</li>
 							</ul>
 						</li>
 					</ul>
 					
 					<div class="groups">
-						<h2>New Group +</h2>
+						<a href="newgroup.html"><h2>New Group +</h2></a>
 					</div>
 					
 					<div class="sidebarlogoutfooter">
@@ -109,19 +109,5 @@
 			$(this).parent().find('ul').toggle();
 			/*$(this).text('<h2 class="groups">Groups &#9654</h2>');*/
 		});
-		
-		/*if (isset($_GET['mySearchButton']))
-		{
-			
-		}*/
-		
-		/*$(document).ready(function()
-		{
-			$('input.typeahead').typeahead({
-				name: 'typeahead',
-				remote:'groupsearch.php?key=%QUERY',
-				limit : 10
-			});
-		});*/
 	</script>
 </html>
