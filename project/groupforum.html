@@ -37,9 +37,10 @@
 						<form id="search-group" method="post" action="groupsearch.php" data-ajax="false">
 							<fieldset>
 								<div class="searchbar" data-role="ui-fieldcontain">
-									<input type="text" name="typeahead" onkeyup="groupResults(this.value)" placeholder="Search for a group"/>
+									<input type="text" name="typeahead" placeholder="Search for a group"/>
+								<!--<button id="searchbtn" name="button" class="searchButton" data-role="none" value="Login" >Search</button>-->
 								</div>
-								<img class="searchicon" src="search_icon.png" onclick="search_groups()">
+								<img type="submit" class="searchicon" src="search_icon.png" name="button">
 							</fieldset>
 						</form>
 						<div id="groupsearch"></div>
@@ -48,15 +49,14 @@
 					<ul class="list">
 						<li>
 							<a><h2 class="groups">Groups &#9660</h2></a>
-							<ul>
-								<li><h3>Math group</h3></li>
-								<li><h3>COEN 10 study</h3><li>
+							<ul id="grouplist">
+								<li>Math group</li>
 							</ul>
 						</li>
 					</ul>
 					
 					<div class="groups">
-						<h2>New Group +</h2>
+						<a href="newgroup.html"><h2>New Group +</h2></a>
 					</div>
 					
 					<div class="sidebarlogoutfooter">
@@ -88,15 +88,5 @@
 			$(this).parent().find('ul').toggle();
 			/*$(this).text('<h2 class="groups">Groups &#9654</h2>');*/
 		});
-		
-		$(document).ready(function()
-		{
-			$('input.typeahead').typeahead({
-				name: 'typeahead',
-				remote:'search.php?key=%QUERY',
-				limit : 10
-			});
-		});
-	
 	</script>
 </html>
