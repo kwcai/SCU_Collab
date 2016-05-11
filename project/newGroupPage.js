@@ -28,7 +28,7 @@ $(document).ready(function()
 
 	function newGroupPage(){
 
-		alert("Function called");
+		//alert("Function called");
 
 		var data = $("#new-group").serialize();
 		var user = localStorage.getItem('user');
@@ -36,7 +36,7 @@ $(document).ready(function()
     	//var link = $('#g_name').val();
     	//link = str.replace(/\s/g, '');
     
-   	 	alert(data);
+   	 	//alert(data);
    	 	//alert(link);
 
 		$.ajax({ 
@@ -44,14 +44,14 @@ $(document).ready(function()
          data: data,
          type: "POST",
          success: function(output) {
-                      alert(output);
-                      if(output == "This group name has already been taken")
+                      //alert(output);
+                      if(output == "This Group Name has already been taken")
                       {
                       	alert(output);
                       }
                       else {
                       	//alert(location.href)
-                      window.location.replace("students.engr.scu.edu/~kcai/SCU_Collab/groups/"+output);
+                      window.location.replace("/~kcai/SCU_Collab/groups/"+output);
                   	  }
                   }
 		});

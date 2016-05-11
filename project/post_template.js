@@ -2,7 +2,7 @@ $(document).ready(function()
 {
 	/* form validation rules */
 
-	alert("document is ready");
+	//alert("document is ready");
 
 	$("#forumpost").validate({
 
@@ -28,15 +28,15 @@ $(document).ready(function()
 		var user = localStorage.getItem('user');
     	var data = data + "&user=" + user;
     
-    	alert(data);
+    	//alert(data);
 
 		$.ajax({ 
 		 url: '{group_link}post.php',
          data: data,
          type: "POST",
          success: function(output) {
-                      alert(output);
-                      //window
+                      //alert(output);
+                      window.location.replace("/~kcai/SCU_Collab/groups/{group_link}.html");
                   }
 		});
 	}

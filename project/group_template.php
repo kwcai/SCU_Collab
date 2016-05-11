@@ -33,21 +33,25 @@
     $row = $stmt->fetch_assoc();
     $g_id = $row['group_id'];
     
-    echo $g_id;
+    //echo $g_id;
 
-		if($result = $db->query("SELECT * FROM `posts` WHERE group_id = '$g_id' ORDER by `post_id` DESC LIMIT 10"))
+		if($result = $db->query("SELECT * FROM `posts` WHERE group_id = '$g_id' ORDER by `post_id` LIMIT 10"))
 		{
 
-			echo "<table>";
+			//echo "<table>";
 
 			while ($row = $result->fetch_assoc())
 			{
-				echo "<tr><td>" . $row['title'] . "</tr></td>";
-				echo "<tr><td>" . $row['data'] . "</tr></td>";
+				echo "<div class=\"box\">";
+				echo "<h2 class=\"posttitle\">" . $row['title'] . "</h2>";
+				echo "<p class=\"postdescription\">" . $row['data'] . "</p>";
+				//echo "<tr><td>" . $row['title'] . "</h2>";
+				//echo "<tr><td>" . $row['data'] . "</p>";
 				echo "<tr><td>" . $row['username'] . "</tr></td>";
+				echo "</div>";
 			}
 
-			echo "<table>";
+			//echo "<table>";
       
       		$result->free();
 
