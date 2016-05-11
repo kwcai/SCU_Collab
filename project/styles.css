@@ -279,7 +279,7 @@ ul li ul {
 .box {
 	padding: 1em;
 	background-color: #ff9999;
-	margin: 0 1em;
+	margin: 0 1em 1em 1em;
 	border-radius: 1em;
 }
 
