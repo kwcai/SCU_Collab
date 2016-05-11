@@ -174,7 +174,16 @@ h2 {
 }
 
 /* list of groups */
-h3 {
+/*h3 {
+	position: relative !important;
+	font-weight: bold !important;
+	font-size: 1.5em !important;
+	font-style: bold !important;
+	color: white !important;
+	margin: 0 0 0 1em !important;
+}*/
+
+#grouplist li {
 	position: relative !important;
 	font-weight: bold !important;
 	font-size: 1.5em !important;
@@ -265,6 +274,22 @@ ul li ul {
 	padding: 0.25em 0;
 	bottom: 0px;
 	background-color: #e60000;
+}
+
+.box {
+	padding: 1em;
+	background-color: #ff9999;
+	margin: 0 1em;
+	border-radius: 1em;
+}
+
+.posttitle {
+	font-size: 1.5em !important;
+	font-style: bold !important;
+}
+
+p {
+	color: white;
 }
 
 .sidebaruserheader h2 {
