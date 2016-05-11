@@ -27,25 +27,11 @@
 	</head>
 	<body>
 		<div data-role="page">
-		<script type="text/javascript">
-			var url = window.location.pathname;
-			var filename = url.substring(url.lastIndexOf('/')+1);
-			
-			if(localStorage.login=="true" && filename == 'index.html')
-			{
-				window.location.href="home.html";
-			}
-			else if(localStorage.login=="false" && filename != 'index.html')
-			{
-				window.location.href="../index.html";
-			}
-		</script>
-		
 			<div data-role="header">
 				<h1>{Group name}</h1>
 			</div>
 			
-			<!--<div>
+			<div>
 				<div class="groupelement">
 					<h2>Events</h2>
 				</div>
@@ -58,14 +44,6 @@
 				<div class="leavegroup">
 					<h2>Leave Group</h2>
 				</div>
-			</div> -->
-
-			{group_name}<br /> 
-		
-			<a href="{group_name}post.html">Post</a>
-		
-			<div id = "content">
-			
 			</div>
 			
 			<img class="toggle" src="toggle_sidebar.png" onclick="toggle_sidebar()">
@@ -93,7 +71,6 @@
 						<li>
 							<a><h2 class="groups">Groups &#9660</h2></a>
 							<ul id="grouplist">
-								<li>Math group</li>
 							</ul>
 						</li>
 					</ul>

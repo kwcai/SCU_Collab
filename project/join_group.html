@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Home Page</title>
+		<title>Join Group</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="styles.css">
 		
@@ -10,37 +10,33 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
 		<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
-		<script src="logout.js"></script>
-		<script src="typeahead.jquery.min.js"></script>
-		<script src="group_display.js"></script>
-
-		<!-- Check if user is already logged in // Put into own js file later-->
-		<script type="text/javascript">
-
-			var url = window.location.pathname;
-			var filename = url.substring(url.lastIndexOf('/')+1);
-
-			if(localStorage.login=="true" && filename == 'index.html')
-			{
-				window.location.href="home.html";
-			}
-			else if(localStorage.login=="false" && filename != 'index.html')
-			{
-				window.location.href="index.html";
-			}
-
-		</script>
 	</head>
-	
 	<body>
+
 		<div data-role="page">
+			<script src="newGroupPage.js"></script>
 			<div data-role="header">
-				<h1>SCU Collab</h1>
+				<h1>Join Group</h1>
 			</div>
 			
-			<div id="homescreen">
-			<!--<h2>Welcome, <!<em><?php echo $current_user;?>!</em></h2>-->
-				<h2 id = "welcome_msg"></h2>
+			<div class="form">
+				<form id="new-group" method="post" data-ajax="false">
+					<fieldset>
+						<div class="input" data-role="ui-fieldcontain">
+							<label for=g_name>Group Name</label>
+							<input type="text" name="g_name" id = "g_name" placeholder="Group Name" />
+						</div>
+						<div class="input" data-role="ui-fieldcontain">
+							<label for="grouppassword">Group Password</label>
+							<input type="password" name="grouppassword" placeholder= "Group Password" />
+						</div>
+						<!--<input type="submit" class="customButton" value="Submit" data-rule="none">-->
+						<!--<button class="customButton" data-role="none" value="Submit">Submit</button>-->
+						<div class="register">
+							<button id="groupbtn" name="myGroupButton" class="customButton" data-role="none" value="Login" >Submit</button>
+						</div>
+					</fieldset>
+				</form>
 			</div>
 			
 			<img class="toggle" src="toggle_sidebar.png" onclick="toggle_sidebar()">
@@ -83,12 +79,12 @@
 					</a>
 				</ul>
 			</div>
+			
 		</div>
 	</body>
+
+
 	
-	<script>
-		//document.getElementById("welcome_msg").innerHTML = "Welcome" . localStorage.user;
-	</script>
 	<script>
         function toggle_sidebar()
         {
