@@ -1,6 +1,6 @@
 <?php
 
-	include('../svr_config.php');
+	include('../../svr_config.php');
 
 	// If statements to choose function
 

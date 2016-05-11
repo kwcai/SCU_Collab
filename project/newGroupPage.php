@@ -104,9 +104,11 @@
 	          	$placeholders = array("{group_name}", "{description}", "{group_link}");
 
 	         	$new_groupfile = str_replace($placeholders, $data, $tpl);
-	         	$new_groupjs = str_replace($placeholders, $data, $tpl_js_file);
-	         	$new_groupphp = str_replace($placeholders, $data, $tpl_php_file);
+	         	$new_groupjs = str_replace($placeholders, $data, $tpl_js);
+	         	$new_groupphp = str_replace($placeholders, $data, $tpl_php);
 	         	$new_postfile = str_replace($placeholders, $data, $tpl_post);
+
+	         	echo  $new_groupjs;
 
 				$string = $data['g_name'];
 				$string = preg_replace("/[^A-Za-z0-9 ]/", '', $string);
