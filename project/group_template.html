@@ -1,8 +1,9 @@
+<!DOCTYPE html>
 <html> 
 	<head> 
 		<title>{group_name} Home Page</title> 
 		
-		<link rel="stylesheet" type="text/css" href="../styles.css">
+		<link rel="stylesheet" type="text/css" href="styles.css">
 		
 		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
 		
@@ -11,7 +12,8 @@
 		<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
 		<script src="../logout.js"></script>
 		
-		<script type="text/javascript">
+		<!--<script type="text/javascript">
+		
 			var url = window.location.pathname;
 			var filename = url.substring(url.lastIndexOf('/')+1);
 			
@@ -23,7 +25,8 @@
 			{
 				window.location.href="../index.html";
 			}
-		</script>
+			
+		</script>-->
 	</head>
 	<body>
 		<div data-role="page">
@@ -32,7 +35,9 @@
 				<h1>{group_name}</h1>
 			</div>
 		
-			<a href="{group_link}post.html">Post</a>
+			<div class="groupelement"
+				<h2><a href="{group_link}post.html">Post</a></h2>
+			</div>
 		
 			<div id = "content">
 			
@@ -62,6 +67,10 @@
 						<a href="http://students.engr.scu.edu/~kcai/SCU_Collab/newgroup.html"><h2>New Group +</h2></a>
 					</div>
 					
+					<div class="groups">
+						<a href="http://students.engr.scu.edu/~kcai/SCU_Collab/join_group.html"><h2>Join Group</h2></a>
+					</div>
+					
 					<div class="sidebarlogoutfooter">
 						<h2>Logout</h2>
 					</div>
@@ -80,7 +89,7 @@
 				
 				console.log(sidebar.style.left);
 				
-				if(sidebar.style.left == "-80%")
+				if(sidebar.style.left == "-80%" || sidebar.style.left == "")
 				{
 					sidebar.style.left = "0px";
 				}

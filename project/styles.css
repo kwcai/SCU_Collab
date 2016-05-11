@@ -210,6 +210,20 @@ a {
 	display: block;
 }
 
+/* For the post button */
+.groupelement a {
+	position: relative;
+	font-size: 1.5em;
+	color: white !important;
+	padding: 0.5em 0;
+	background-color: #ff9999;
+	width: 50%;
+	border-radius: 1em;
+	text-align: center;
+	margin: 0 auto;
+	top: 0.5em;
+}
+
 .left {
 	float: left;
 	margin-left: 1em;
