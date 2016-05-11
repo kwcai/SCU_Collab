@@ -14,7 +14,7 @@ include('../svr_config.php');
 
 $search = $_GET["key"];
 
-$query = "SELECT group_name FROM groups WHERE group_name = ?"
+$query = "SELECT group_name FROM groups WHERE group_name = ?";
 
 $query->bind_param("s", $search);
 
