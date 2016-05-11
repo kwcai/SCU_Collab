@@ -36,6 +36,7 @@ $(document).ready(function()
          type: "POST",
          success: function(output) {
                       alert(output);
+                      //window
                   }
 		});
 	}

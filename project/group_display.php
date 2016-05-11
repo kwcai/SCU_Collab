@@ -2,8 +2,8 @@
 
 	include('../svr_config.php');
 
-	//$user = $_POST['user'];
-	$user = 'kcai';
+	$user = $_POST['user'];
+	//$user = "kcai";
 	$id_groups = array();
 	$group_names = array();
 
@@ -34,25 +34,28 @@
 
 	$arrlength = count($id_groups);
 
-	for($x = 0; $x < $arrlength; $x++) {
+	/*for($x = 0; $x < $arrlength; $x++) {
     	echo $id_groups[$x];
     	echo "<br>";
-	}
+	} */
 
 	$in = join(',', array_fill(0, count($id_groups), '?'));
 	$select = "SELECT group_name FROM groups WHERE group_id IN ($in)";
-	$stmt = $db->prepare($select);
-	$stmt->bind_param(str_repeat('s', count($id_groups)), ...$id_groups);
-	$stmt->execute();
-	
-	if($result = $stmt->get_result())
+	if($stmt = $db->prepare($select))
 	{
-		while($row = $result->fetch_assoc())
+		$stmt->bind_param(str_repeat('s', count($id_groups)), ...$id_groups);
+		$stmt->execute();
+	
+		if($result = $stmt->get_result())
 		{
-			echo $row['group_name'] . "<br>";
+			while($row = $result->fetch_assoc())
+			{
+				$string = $row['group_name'];
+				$string = preg_replace("/[^A-Za-z0-9 ]/", '', $string);
+				echo "<li><a href=\"groups/" . $string . ".html\">" . $row['group_name'] . "</a></li>";
+			}
 		}
+		$stmt->close();
 	}
-
-	$stmt->close();
 
 ?>

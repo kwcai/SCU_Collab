@@ -88,6 +88,7 @@
           		$data['g_name'] = preg_replace('!\s+!', ' ', $_POST["g_name"]);
            		$data['description'] = $_POST["description"];
            		$data['glink'] = preg_replace('!\s+!', '', $_POST["g_name"]);
+           		$data['glink'] = preg_replace("/[^A-Za-z0-9 ]/", '', $data['glink']);
 
            		/* place files for main page */
           	  	$tpl = file_get_contents($tpl_path.$tpl_file);

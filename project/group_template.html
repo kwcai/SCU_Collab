@@ -27,6 +27,20 @@
 	</head>
 	<body>
 		<div data-role="page">
+		<script type="text/javascript">
+			var url = window.location.pathname;
+			var filename = url.substring(url.lastIndexOf('/')+1);
+			
+			if(localStorage.login=="true" && filename == 'index.html')
+			{
+				window.location.href="home.html";
+			}
+			else if(localStorage.login=="false" && filename != 'index.html')
+			{
+				window.location.href="../index.html";
+			}
+		</script>
+		
 			<div data-role="header">
 				<h1>{Group name}</h1>
 			</div>
