@@ -207,6 +207,7 @@ h5 {
 
 a {
 	text-decoration: none;
+	display: block;
 }
 
 .left {
