@@ -73,8 +73,8 @@
 				$tpl_js_file = "group_template.js";
 				$tpl_php_file = "group_template.php";
 				$tpl_post_file = "post_template.html";
-				//$tpl_post_js_file = "post_template.js";
-				//$tpl_post_php_file = "post_template.php";
+				$tpl_post_js_file = "post_template.js";
+				$tpl_post_php_file = "post_template.php";
 
 				$tpl_path = "templates/";
 				$group_path = "groups/";
@@ -94,12 +94,10 @@
           	  	$tpl_js = file_get_contents($tpl_path.$tpl_js_file);
           	  	$tpl_php = file_get_contents($tpl_path.$tpl_php_file);
 
-          	  	echo $tpl_js;
-
           	  	/* place files for post page */
           	  	$tpl_post = file_get_contents($tpl_path.$tpl_post_file);
-          	  	//$tpl_post_js = "file_get_contents($tpl_path.$tpl_post_js_file");
-          	  	//$tpl_post_php = "file_get_contents($tpl_path.$tpl_post_php_file");
+          	  	$tpl_post_js = file_get_contents($tpl_path.$tpl_post_js_file);
+          	  	$tpl_post_php = file_get_contents($tpl_path.$tpl_post_php_file);
 
 	          	$placeholders = array("{group_name}", "{description}", "{group_link}");
 
@@ -107,8 +105,8 @@
 	         	$new_groupjs = str_replace($placeholders, $data, $tpl_js);
 	         	$new_groupphp = str_replace($placeholders, $data, $tpl_php);
 	         	$new_postfile = str_replace($placeholders, $data, $tpl_post);
-
-	         	echo  $new_groupjs;
+	         	$new_postjs = str_replace($placeholders, $data, $tpl_post_js);
+	         	$new_postphp = str_replace($placeholders, $data, $tpl_post_php);
 
 				$string = $data['g_name'];
 				$string = preg_replace("/[^A-Za-z0-9 ]/", '', $string);
@@ -118,11 +116,16 @@
 				$file_js = $string.".js";
 				$file_php = $string.".php";
 				$file_post = $string."post.html";
+				$file_post_js = $string."post.js";
+				$file_post_php = $string."post.php";
 
 				file_put_contents($group_path.$file, $new_groupfile);
 				file_put_contents($group_path.$file_js, $new_groupjs);
 				file_put_contents($group_path.$file_php, $new_groupphp);
 				file_put_contents($group_path.$file_post, $new_postfile);
+				file_put_contents($group_path.$file_post_js, $new_postjs);
+				file_put_contents($group_path.$file_post_php, $new_postphp);
+
 				echo $file;
 			}
 				//else

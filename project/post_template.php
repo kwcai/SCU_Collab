@@ -1,12 +1,12 @@
 <?php
 
-	 include('../svr_config.php');
+	 include('../../svr_config.php');
 
 	 	$user = $_POST['user']; // get from localstorage using ajax
 	 	$title = $_POST['title'];
 	 	$data = $_POST['data'];
 
-	 	$group_name = "Test Page"; // would be given on group creation
+	 	$group_name = "{group_name}"; // would be given on group creation
 
 	 	//retrieve ID of group
 	 	$stmt = $db->prepare("SELECT group_id FROM groups WHERE group_name = ?");
@@ -15,10 +15,7 @@
 			
 		$g_id = $stmt->get_result()->fetch_object()->group_id;
 
-		/* echo $user;
-		echo $title;
-		echo $data;
-		echo $g_id; */
+		echo $g_id;
 
 		$stmt->close();
 

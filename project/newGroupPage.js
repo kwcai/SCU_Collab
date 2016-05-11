@@ -33,10 +33,10 @@ $(document).ready(function()
 		var data = $("#new-group").serialize();
 		var user = localStorage.getItem('user');
     	var data = data + "&user=" + user;
-    	var link = $('#g_name').val();
-    	link = str.replace(/\s/g, '');
+    	//var link = $('#g_name').val();
+    	//link = str.replace(/\s/g, '');
     
-    alert(data);
+   	 alert(data);
 
 		$.ajax({ 
 		 url: 'newGroupPage.php',
@@ -44,7 +44,7 @@ $(document).ready(function()
          type: "POST",
          success: function(output) {
                       alert(output);
-                      window.location.href = "/groups/"+link+".html";
+                      //window.location.href = "/groups/"+link+".html";
                   }
 		});
     /*var xmlhttp = new XMLHttpRequest();
