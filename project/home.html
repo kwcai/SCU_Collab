@@ -11,7 +11,6 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
 		<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
 		<script src="logout.js"></script>
-		<script src="typeahead.jquery.min.js"></script>
 		<script src="group_display.js"></script>
 
 		<!-- Check if user is already logged in // Put into own js file later-->
@@ -30,6 +29,7 @@
 			}
 
 		</script>
+		
 	</head>
 	
 	<body>
@@ -68,7 +68,6 @@
 						<li>
 							<a><h2 class="groups">Groups &#9660</h2></a>
 							<ul id="grouplist">
-								<li>Math group</li>
 							</ul>
 						</li>
 					</ul>
@@ -97,7 +96,7 @@
             
             console.log(sidebar.style.left);
             
-            if(sidebar.style.left == "-80%")
+            if(sidebar.style.left == "-80%" || sidebar.style.left == "")
             {
                 sidebar.style.left = "0px";
 			}
@@ -112,4 +111,5 @@
 			/*$(this).text('<h2 class="groups">Groups &#9654</h2>');*/
 		});
 	</script>
+	
 </html>

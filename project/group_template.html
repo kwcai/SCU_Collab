@@ -2,7 +2,7 @@
 	<head> 
 		<title>{group_name} Home Page</title> 
 		
-		<link rel="stylesheet" type="text/css" href="styles.css">
+		<link rel="stylesheet" type="text/css" href="../styles.css">
 		
 		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
 		
@@ -27,22 +27,10 @@
 	</head>
 	<body>
 		<div data-role="page">
-		<script type="text/javascript">
-			var url = window.location.pathname;
-			var filename = url.substring(url.lastIndexOf('/')+1);
-			
-			if(localStorage.login=="true" && filename == 'index.html')
-			{
-				window.location.href="home.html";
-			}
-			else if(localStorage.login=="false" && filename != 'index.html')
-			{
-				window.location.href="../index.html";
-			}
-		</script>
+		<script src = "{group_link}.js"></script>
 		
 			<div data-role="header">
-				<h1>{Group name}</h1>
+				<h1>{group_name}</h1>
 			</div>
 			
 			<!--<div>
@@ -68,7 +56,7 @@
 			
 			</div>
 			
-			<img class="toggle" src="toggle_sidebar.png" onclick="toggle_sidebar()">
+			<img class="toggle" src="../toggle_sidebar.png" onclick="toggle_sidebar()">
 			
 			<div id="sidebar">
 				<ul id="sidebar_navigation">
@@ -83,7 +71,7 @@
 									<input type="text" name="typeahead" placeholder="Search for a group"/>
 								<!--<button id="searchbtn" name="button" class="searchButton" data-role="none" value="Login" >Search</button>-->
 								</div>
-								<img type="submit" class="searchicon" src="search_icon.png" name="button">
+								<img type="submit" class="searchicon" src="../search_icon.png" name="button">
 							</fieldset>
 						</form>
 						<div id="groupsearch"></div>
@@ -135,7 +123,7 @@
 				/*$(this).text('<h2 class="groups">Groups &#9654</h2>');*/
 			});
 		</script>
-		<script src = "{group_link}.js"></script>
+		
 		
 	</head> 
 	<!--<body> 

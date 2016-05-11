@@ -16,6 +16,28 @@
 	<body>
 		<div data-role="page">
 			<script src="{group_link}post.js"></script>
+			<script>
+			function toggle_sidebar()
+			{
+				var sidebar = document.getElementById("sidebar");
+				
+				console.log(sidebar.style.left);
+				
+				if(sidebar.style.left == "-80%")
+				{
+					sidebar.style.left = "0px";
+				}
+				else
+				{
+					sidebar.style.left = "-80%";
+				}
+			}
+			
+			$('.list > li a').click(function() {
+				$(this).parent().find('ul').toggle();
+				/*$(this).text('<h2 class="groups">Groups &#9654</h2>');*/
+			});
+			</script>
 			<div data-role="header">
 				<h1>Post to {group_name}</h1> <!-- Replace with actual name -->
 			</div>
