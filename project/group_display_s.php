@@ -53,7 +53,7 @@
 				$string = $row['group_name'];
 				$string = preg_replace("/[^A-Za-z0-9 ]/", '', $string);
 				$string = preg_replace('!\s+!', '', $string);
-				echo "<li><a href=\"groups/" . $string . ".html\">" . $row['group_name'] . "</a></li>";
+				echo "<li><a href=\"" . $string . ".html\">" . $row['group_name'] . "</a></li>";
 			}
 		}
 		$stmt->close();
