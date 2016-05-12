@@ -20,7 +20,7 @@
 		<script src="display_posts.js"></script>
 
 		<!-- Check if user is already logged in // Put into own js file later-->
-		<script type="text/javascript">
+		<!--<script type="text/javascript">
 
 			var url = window.location.pathname;
 			var filename = url.substring(url.lastIndexOf('/')+1);
@@ -34,7 +34,7 @@
 				window.location.href="index.html";
 			}
 
-		</script>
+		</script>-->
 		
 	</head>
 	
@@ -47,6 +47,11 @@
 			<div id="homescreen">
 			<!--<h2>Welcome, <!<em><?php echo $current_user;?>!</em></h2>-->
 				<h2 id = "welcome_msg"></h2>
+			</div>
+			
+			<h2 id="recentpostsstyle">Recent Posts</h2>
+			
+			<div id="recentposts">
 			</div>
 			
 			<img class="toggle" src="toggle_sidebar.png" onclick="toggle_sidebar()">

@@ -133,6 +133,11 @@ label {
 	float: right;
 }
 
+#recentpostsstyle {
+	top: 1em;
+	left: 1em;
+	margin-bottom: 1em !important;
+}
 
 #sidebar {
 	position: fixed;
