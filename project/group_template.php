@@ -47,7 +47,7 @@
 				echo "<p class=\"postdescription\">" . $row['data'] . "</p>";
 				//echo "<tr><td>" . $row['title'] . "</h2>";
 				//echo "<tr><td>" . $row['data'] . "</p>";
-				echo "<tr><td>" . $row['username'] . "</tr></td>";
+				echo "<tr><td>Posted by: " . $row['username'] . "</tr></td>";
 				echo "</div>";
 			}
 

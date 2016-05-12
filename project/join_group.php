@@ -4,7 +4,7 @@
 
 		$g_name = $_POST['g_name'];
 
-		echo $g_name;
+		//echo $g_name;
 
 		$user = $_POST['user'];
 
@@ -39,7 +39,7 @@
 			}
 	        //$result = $stmt->fetch();
 	        $u_id = $stmt->get_result()->fetch_object()->user_id;
-	        echo $u_id;
+	        //echo $u_id;
 			$stmt->close();
 
 			/* Check if the user is already in the group */

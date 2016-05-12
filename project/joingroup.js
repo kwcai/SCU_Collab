@@ -36,7 +36,7 @@ $(document).ready(function()
     	//var link = $('#g_name').val();
     	//link = str.replace(/\s/g, '');
     
-   	 	alert(data);
+   	 	//alert(data);
    	 	//alert(link);
 
 		$.ajax({ 
@@ -51,7 +51,7 @@ $(document).ready(function()
                       }
                       else {
                       	//alert(location.href)
-                      	window.location.replace("/~kcai/SCU_Collab/groups/"+output);
+                      	window.location.replace("/~kcai/SCU_Collab/groups/"+output+".html");
 	                  }
               	  }
               });
