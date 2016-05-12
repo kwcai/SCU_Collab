@@ -41,7 +41,6 @@ $('document').ready(function()
 					localStorage.login="true";
 					localStorage.user=$("#username").val();
 					window.location.href = "home.html";
-					alert("You are now logged in");
 				}
 				else if(data=="failure")
 				{
