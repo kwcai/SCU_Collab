@@ -53,8 +53,8 @@
 			
 			<div id="sidebar">
 				<ul id="sidebar_navigation">
-					<div class="sidebaruserheader" id="email">					
-						<!-- email goes here -->
+					<div class="sidebaruserheader">
+						<h2 id="email"></h2>
 					</div>
 					
 					<div class="groups">
@@ -88,8 +88,9 @@
 		</body>
 		
 		<script>
-			//document.getElementById("welcome_msg").innerHTML = "Welcome" . localStorage.user;
+			document.getElementById("email").innerHTML = "Welcome, " + localStorage.getItem('user') + "!";
 		</script>
+		
 		<script>
 			function toggle_sidebar()
 			{
