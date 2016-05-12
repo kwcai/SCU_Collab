@@ -42,7 +42,7 @@
 
 	/* Find the user's posts by their username */
 	$in = join(',', array_fill(0, count($p_id), '?'));
-	$select = "SELECT title, data FROM posts WHERE post_id IN ($in)";
+	$select = "SELECT title, data FROM posts WHERE post_id IN ($in) ORDER BY post_id DESC LIMIT 5";
 	if($stmt = $db->prepare($select))
 	{
 		$stmt->bind_param(str_repeat('s', count($p_id)), ...$p_id);
