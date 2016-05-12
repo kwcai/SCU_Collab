@@ -139,6 +139,10 @@ label {
 	margin-bottom: 1.5em !important;
 }
 
+#welcome_msg {
+	
+}
+
 #sidebar {
 	position: fixed;
 	display: inline-block;
