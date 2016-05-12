@@ -5,8 +5,6 @@ $(document).ready(function() {
 
 		var user = localStorage.getItem('user');
 
-		alert(user);
-
 		$.ajax({
 			type: "POST",
 			url: "display_posts.php",
