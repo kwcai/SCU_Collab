@@ -8,6 +8,11 @@
 		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(document).bind("mobileinit", function () {
+			    $.mobile.ajaxEnabled = false;
+			});
+		</script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
 		<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
 		<script src="logout.js"></script>
@@ -84,27 +89,28 @@
 	<script>
 		//document.getElementById("welcome_msg").innerHTML = "Welcome" . localStorage.user;
 	</script>
+
 	<script>
-        function toggle_sidebar()
-        {
-            var sidebar = document.getElementById("sidebar");
-            
-            console.log(sidebar.style.left);
-            
-            if(sidebar.style.left == "-80%" || sidebar.style.left == "")
-            {
-                sidebar.style.left = "0px";
+	        function toggle_sidebar()
+	        {
+	            var sidebar = document.getElementById("sidebar");
+	            
+	            console.log(sidebar.style.left);
+	            
+	            if(sidebar.style.left == "-80%" || sidebar.style.left == "")
+	            {
+	                sidebar.style.left = "0px";
+				}
+	            else
+	            {
+				sidebar.style.left = "-80%";
+				}
 			}
-            else
-            {
-			sidebar.style.left = "-80%";
-			}
-		}
-		
-		$('.list > li a').click(function() {
-			$(this).parent().find('ul').toggle();
-			/*$(this).text('<h2 class="groups">Groups &#9654</h2>');*/
-		});
-	</script>
+			
+			$('.list > li a').click(function() {
+				$(this).parent().find('ul').toggle();
+				/*$(this).text('<h2 class="groups">Groups &#9654</h2>');*/
+			});
+		</script>
 	
 </html>

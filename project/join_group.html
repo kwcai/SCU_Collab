@@ -8,19 +8,26 @@
 		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(document).bind("mobileinit", function () {
+			    $.mobile.ajaxEnabled = false;
+			});
+		</script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
 		<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
+		<script src="logout.js"></script>
+		<script src="group_display.js"></script>
 	</head>
 	<body>
 
 		<div data-role="page">
-			<script src="newGroupPage.js"></script>
+			<script src="joingroup.js"></script>
 			<div data-role="header">
 				<h1>Join Group</h1>
 			</div>
 			
 			<div class="form">
-				<form id="new-group" method="post" data-ajax="false">
+				<form id="join-group" method="post" data-ajax="false">
 					<fieldset>
 						<div class="input" data-role="ui-fieldcontain">
 							<label for=g_name>Group Name</label>
@@ -28,12 +35,12 @@
 						</div>
 						<div class="input" data-role="ui-fieldcontain">
 							<label for="grouppassword">Group Password</label>
-							<input type="password" name="grouppassword" placeholder= "Group Password" />
+							<input type="password" name="grouppassword" id = "grouppassword" placeholder= "Group Password" />
 						</div>
 						<!--<input type="submit" class="customButton" value="Submit" data-rule="none">-->
 						<!--<button class="customButton" data-role="none" value="Submit">Submit</button>-->
 						<div class="register">
-							<button id="groupbtn" name="myGroupButton" class="customButton" data-role="none" value="Login" >Submit</button>
+							<button id="joinbtn" name="myGroupButton" class="customButton" data-role="none" value="Login" >Submit</button>
 						</div>
 					</fieldset>
 				</form>
@@ -60,7 +67,7 @@
 					</ul>
 					
 					<div class="groups">
-						<a href="newgroup.html"><h2>New Group +</h2></a>
+						<a href="http://students.engr.scu.edu/~kcai/SCU_Collab/newgroup.html"><h2>New Group +</h2></a>
 					</div>
 					
 					<div class="groups">
