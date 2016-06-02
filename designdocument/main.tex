@@ -3,14 +3,27 @@
 \usepackage{graphicx}
 \usepackage{cmap}
 \usepackage[T1]{fontenc}
+\usepackage{tabularx}
 \pagestyle{plain}
+\graphicspath{{images/}}
 
 \begin{document}
 %%	\title{}
 \include{cover}
 \pagestyle{plain}
 \include{contents}
-\include{chap1}
-\include{chap2}
-\include{chap3}
+\include{chap1}		%% Introduction
+\include{chap2}		%% Requirements
+\include{chap3}		%% Use Cases
+\include{chap4}		%% Activity Diagram
+\include{chap5}		%% Design and Implementation
+\include{chap6}		%% Technologies Used
+\include{chap7}		%% Architectural Design
+\include{chap8}		%% Design Rationale
+\include{chap9}		%% Testing
+\include{chap10}	%% Lessons Learned
+\include{chap11}	%% Conclusion
+\include{biblio}		%% Bibliography
+\appendix
+\include{app}		%% Appendix
 \end{document}
