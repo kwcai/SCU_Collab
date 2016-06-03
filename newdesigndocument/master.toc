@@ -11,7 +11,6 @@
 \contentsline {section}{\numberline {2.2}Non-functional Requirements}{4}
 \contentsline {subsection}{\numberline {2.2.1}Critical}{4}
 \contentsline {subsection}{\numberline {2.2.2}Recommended}{5}
-\contentsline {subsection}{\numberline {2.2.3}Suggested}{5}
 \contentsline {section}{\numberline {2.3}Design Constraint}{5}
 \contentsline {chapter}{\numberline {3}Use Cases}{6}
 \contentsline {section}{\numberline {3.1}Use Case \#1}{6}
@@ -22,12 +21,6 @@
 \contentsline {chapter}{\numberline {4}Activity Diagram}{9}
 \contentsline {chapter}{\numberline {5}Design and Implementation}{11}
 \contentsline {chapter}{\numberline {6}Technologies Used}{13}
-\contentsline {section}{\numberline {6.1}HTML (Hyper Text Markup Language)}{13}
-\contentsline {section}{\numberline {6.2}CSS (Cascading Style Sheets)}{13}
-\contentsline {section}{\numberline {6.3}Javascript}{13}
-\contentsline {section}{\numberline {6.4}PHP}{13}
-\contentsline {section}{\numberline {6.5}MySQL}{13}
-\contentsline {section}{\numberline {6.6}JQuery Mobile}{13}
 \contentsline {chapter}{\numberline {7}Architectural Design}{14}
 \contentsline {chapter}{\numberline {8}Design Rationale}{15}
 \contentsline {chapter}{\numberline {9}Testing}{16}
@@ -38,6 +31,11 @@
 \contentsline {section}{\numberline {10.1}Workload Balance}{17}
 \contentsline {section}{\numberline {10.2}Proper Research of Technologies}{17}
 \contentsline {section}{\numberline {10.3}Communication}{17}
-\contentsline {chapter}{\numberline {11}Conclusion}{18}
-\contentsline {section}{\numberline {11.1}Risk Analysis}{19}
-\contentsline {section}{\numberline {11.2}Development Timeline}{20}
+\contentsline {chapter}{\numberline {11}Ethical Analysis}{18}
+\contentsline {section}{\numberline {11.1}Ethical Justification}{18}
+\contentsline {section}{\numberline {11.2}Organization}{19}
+\contentsline {section}{\numberline {11.3}Effects on Society and Culture}{19}
+\contentsline {chapter}{\numberline {12}Conclusion}{20}
+\contentsline {section}{\numberline {12.1}Future Development}{20}
+\contentsline {section}{\numberline {12.2}Risk Analysis}{21}
+\contentsline {section}{\numberline {12.3}Development Timeline}{22}
