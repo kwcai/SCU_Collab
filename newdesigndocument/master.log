@@ -1,0 +1,410 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.4.28)  2 JUN 2016 23:35
+entering extended mode
+**./master.tex
+(master.tex
+LaTeX2e <2015/10/01> patch level 2
+Babel <3.9n> and hyphenation patterns for 69 languages loaded.
+(scu-thesis.cls
+Document Class: scu-thesis 2013/10/01 SCU Thesis class
+("C:\Users\Wesley\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\report.cls"
+Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
+("C:\Users\Wesley\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size10.clo"
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Users\Wesley\AppData\Local\Programs\MiKTeX 2.9\tex\latex\setspace\setspace
+.sty"
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+\@margintop=\skip43
+\@marginbottom=\skip44
+\@marginleft=\skip45
+\@marginright=\skip46
+\@bindingoffset=\skip47
+\c@@authorcount=\count88
+\c@@degreecount=\count89
+\c@@departmentcount=\count90
+\c@@itemcount=\count91
+)
+("C:\Users\Wesley\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx
+.sty"
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\Wesley\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.s
+ty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Users\Wesley\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics
+.sty"
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\Wesley\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty
+"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Users\Wesley\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\graphics
+.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 94.
+
+("C:\Users\Wesley\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pdftex-def\pdftex
+.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Users\Wesley\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\infwar
+err.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("C:\Users\Wesley\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ltxcmd
+s.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count92
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+) (master.aux (abstract.aux) (introduction.aux) (requirements.aux)
+(use_cases.aux) (activity_diagram.aux) (design_implementation.aux)
+(technologies_used.aux) (architectural_design.aux) (design_rationale.aux)
+(testing.aux) (lessons_learned.aux) (conclusion.aux) (appendix.aux))
+\openout1 = `master.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+
+("C:\Users\Wesley\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.m
+kii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count93
+\scratchdimen=\dimen105
+\scratchbox=\box26
+\nofMPsegments=\count94
+\nofMParguments=\count95
+\everyMPshowfont=\toks15
+\MPscratchCnt=\count96
+\MPscratchDim=\dimen106
+\MPnumerator=\count97
+\makeMPintoPDFobject=\count98
+\everyMPtoPDFconversion=\toks16
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 25.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 25.
+ [1
+
+
+{C:/Users/Wesley/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+[2]
+\openout2 = `abstract.aux'.
+
+ (abstract.tex [3
+
+]) (master.toc [4
+
+
+])
+\tf@toc=\write3
+\openout3 = `master.toc'.
+
+ [5] (master.lof)
+\tf@lof=\write4
+\openout4 = `master.lof'.
+
+ [6
+
+]
+\openout2 = `introduction.aux'.
+
+ (introduction.tex
+Chapter 1.
+[1
+
+
+
+]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+ [2]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ¶ in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+) [3]
+\openout2 = `requirements.aux'.
+
+ (requirements.tex
+Chapter 2.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 7.
+("C:\Users\Wesley\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 7.
+
+[4
+
+
+
+]) [5]
+\openout2 = `use_cases.aux'.
+
+ (use_cases.tex
+Chapter 3.
+<images/use_cases.png, id=40, 474.77374pt x 304.13625pt>
+File: images/use_cases.png Graphic file (type png)
+
+<use images/use_cases.png>
+Package pdftex.def Info: images/use_cases.png used on input line 6.
+(pdftex.def)             Requested size: 433.62003pt x 277.78537pt.
+ [6
+
+
+
+ <./images/use_cases.png>]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+ [7]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+) [8]
+\openout2 = `activity_diagram.aux'.
+
+
+(activity_diagram.tex
+Chapter 4.
+<images/activity_diagram.png, id=53, 519.9425pt x 1050.92625pt>
+File: images/activity_diagram.png Graphic file (type png)
+
+<use images/activity_diagram.png>
+Package pdftex.def Info: images/activity_diagram.png used on input line 6.
+(pdftex.def)             Requested size: 433.62003pt x 876.45395pt.
+
+
+LaTeX Warning: Float too large for page by 249.96838pt on input line 9.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [9
+
+
+
+] [10 <./images/activity_diagram.png>]
+\openout2 = `design_implementation.aux'.
+
+ (design_implementation.tex
+Chapter 5.
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+<images/login_screen.png, id=61, 401.5pt x 676.5275pt>
+File: images/login_screen.png Graphic file (type png)
+
+<use images/login_screen.png>
+Package pdftex.def Info: images/login_screen.png used on input line 6.
+(pdftex.def)             Requested size: 160.59715pt x 270.6062pt.
+
+<images/home_screen.png, id=62, 400.49625pt x 672.5125pt>
+File: images/home_screen.png Graphic file (type png)
+
+<use images/home_screen.png>
+Package pdftex.def Info: images/home_screen.png used on input line 13.
+(pdftex.def)             Requested size: 160.19566pt x 269.00023pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/sidebar.png, id=63, 301.125pt x 528.47438pt>
+File: images/sidebar.png Graphic file (type png)
+ <use images/sidebar.png>
+Package pdftex.def Info: images/sidebar.png used on input line 20.
+(pdftex.def)             Requested size: 150.56212pt x 264.23654pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [11
+
+
+
+ <./images/login_screen.png>] [12 <./images/home_screen.png> <./images/sidebar.
+png>]
+\openout2 = `technologies_used.aux'.
+
+ (technologies_used.tex
+Chapter 6.
+) [13
+
+
+
+]
+\openout2 = `architectural_design.aux'.
+
+ (architectural_design.tex
+Chapter 7.
+<images/architectural_design.png, id=74, 595.22375pt x 293.095pt>
+File: images/architectural_design.png Graphic file (type png)
+
+<use images/architectural_design.png>
+Package pdftex.def Info: images/architectural_design.png used on input line 6.
+(pdftex.def)             Requested size: 433.62003pt x 213.51927pt.
+) [14
+
+
+
+ <./images/architectural_design.png>]
+\openout2 = `design_rationale.aux'.
+
+(design_rationale.tex
+Chapter 8.
+) [15
+
+
+
+]
+\openout2 = `testing.aux'.
+
+ (testing.tex
+Chapter 9.
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+) [16
+
+
+
+]
+\openout2 = `lessons_learned.aux'.
+
+ (lessons_learned.tex
+Chapter 10.
+) [17
+
+
+
+]
+\openout2 = `conclusion.aux'.
+
+ (conclusion.tex
+Chapter 11.
+) [18
+
+
+
+]
+\openout2 = `appendix.aux'.
+
+ (appendix.tex <images/risk_analysis.png, id=91, 605.26125pt x 441.65pt>
+File: images/risk_analysis.png Graphic file (type png)
+
+<use images/risk_analysis.png>
+Package pdftex.def Info: images/risk_analysis.png used on input line 7.
+(pdftex.def)             Requested size: 433.62003pt x 316.41081pt.
+ [19
+
+
+
+ <./images/risk_analysis.png>]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+
+<images/timeline.png, id=97, 691.58376pt x 190.7125pt>
+File: images/timeline.png Graphic file (type png)
+
+<use images/timeline.png>
+Package pdftex.def Info: images/timeline.png used on input line 20.
+(pdftex.def)             Requested size: 433.62003pt x 119.57913pt.
+) [20
+
+ <./images/timeline.png>] (master.aux
+(abstract.aux) (introduction.aux) (requirements.aux) (use_cases.aux)
+(activity_diagram.aux) (design_implementation.aux) (technologies_used.aux)
+(architectural_design.aux) (design_rationale.aux) (testing.aux)
+(lessons_learned.aux) (conclusion.aux) (appendix.aux)) ) 
+Here is how much of TeX's memory you used:
+ 1384 strings out of 493634
+ 19587 string characters out of 3134831
+ 79551 words of memory out of 3000000
+ 4707 multiletter control sequences out of 15000+200000
+ 6370 words of font info for 23 fonts, out of 3000000 for 9000
+ 1025 hyphenation exceptions out of 8191
+ 29i,6n,21p,1204b,217s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/Wesley/AppDat
+a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users
+/Wesley/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12
+.pfb><C:/Users/Wesley/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmr10.pfb><C:/Users/Wesley/AppData/Local/Programs/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmsy10.pfb>
+Output written on master.pdf (26 pages, 180160 bytes).
+PDF statistics:
+ 116 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+
