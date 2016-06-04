@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.4.28)  3 JUN 2016 11:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.4.28)  3 JUN 2016 15:28
 entering extended mode
 **./master.tex
 (master.tex
@@ -77,11 +77,11 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 ))
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
-) (master.aux (abstract.aux) (introduction.aux) (requirements.aux)
-(use_cases.aux) (activity_diagram.aux) (design_implementation.aux)
-(technologies_used.aux) (architectural_design.aux) (design_rationale.aux)
-(testing.aux) (lessons_learned.aux) (ethics.aux) (conclusion.aux) (appendix.aux
-))
+) (master.aux (abstract.aux) (acknowledgments.aux) (introduction.aux)
+(requirements.aux) (use_cases.aux) (activity_diagram.aux)
+(design_implementation.aux) (technologies_used.aux) (architectural_design.aux)
+(design_rationale.aux) (testing.aux) (lessons_learned.aux) (ethics.aux)
+(conclusion.aux) (appendix.aux))
 \openout1 = `master.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
@@ -125,18 +125,26 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
  (abstract.tex [3
 
-]) (master.toc [4
+])
+\openout2 = `acknowledgments.aux'.
+
+ (acknowledgments.tex) [4
+
+
+
+] (master.toc [5
 
 
 ])
 \tf@toc=\write3
 \openout3 = `master.toc'.
 
- [5] (master.lof)
+ [6]
+(master.lof)
 \tf@lof=\write4
 \openout4 = `master.lof'.
 
- [6
+ [7
 
 ]
 \openout2 = `introduction.aux'.
@@ -160,7 +168,7 @@ Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
-) [2] [3]
+) [2]
 \openout2 = `requirements.aux'.
 
  (requirements.tex
@@ -172,11 +180,11 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 7.
 
-[4
+[3
 
 
 
-]) [5]
+]) [4]
 \openout2 = `use_cases.aux'.
 
  (use_cases.tex
@@ -186,50 +194,18 @@ File: images/use_cases.png Graphic file (type png)
 
 <use images/use_cases.png>
 Package pdftex.def Info: images/use_cases.png used on input line 6.
-(pdftex.def)             Requested size: 433.62003pt x 277.78537pt.
- [6
+(pdftex.def)             Requested size: 469.75502pt x 300.93338pt.
+ [5
 
 
 
- <./images/use_cases.png>]
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ú in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ú in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
- [7]
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ú in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ú in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
-) [8]
+ <./images/use_cases.png>]) [6]
 \openout2 = `activity_diagram.aux'.
 
 
 (activity_diagram.tex
 Chapter 4.
-<images/activity_diagram.png, id=53, 519.9425pt x 1050.92625pt>
+<images/activity_diagram.png, id=50, 519.9425pt x 1050.92625pt>
 File: images/activity_diagram.png Graphic file (type png)
 
 <use images/activity_diagram.png>
@@ -239,11 +215,11 @@ Package pdftex.def Info: images/activity_diagram.png used on input line 6.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [9
+) [7
 
 
 
-] [10 <./images/activity_diagram.png>]
+] [8 <./images/activity_diagram.png>]
 \openout2 = `design_implementation.aux'.
 
  (design_implementation.tex
@@ -251,14 +227,14 @@ Chapter 5.
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
-<images/login_screen.png, id=61, 401.5pt x 676.5275pt>
+<images/login_screen.png, id=58, 401.5pt x 676.5275pt>
 File: images/login_screen.png Graphic file (type png)
 
 <use images/login_screen.png>
 Package pdftex.def Info: images/login_screen.png used on input line 6.
 (pdftex.def)             Requested size: 160.59715pt x 270.6062pt.
 
-<images/home_screen.png, id=62, 400.49625pt x 672.5125pt>
+<images/home_screen.png, id=59, 400.49625pt x 672.5125pt>
 File: images/home_screen.png Graphic file (type png)
 
 <use images/home_screen.png>
@@ -268,7 +244,7 @@ Package pdftex.def Info: images/home_screen.png used on input line 13.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/sidebar.png, id=63, 301.125pt x 528.47438pt>
+<images/sidebar.png, id=60, 301.125pt x 528.47438pt>
 File: images/sidebar.png Graphic file (type png)
  <use images/sidebar.png>
 Package pdftex.def Info: images/sidebar.png used on input line 20.
@@ -277,17 +253,27 @@ Package pdftex.def Info: images/sidebar.png used on input line 20.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [11
+<images/group_pic.png, id=61, 286.82156pt x 476.53032pt>
+File: images/group_pic.png Graphic file (type png)
+
+<use images/group_pic.png>
+Package pdftex.def Info: images/group_pic.png used on input line 27.
+(pdftex.def)             Requested size: 172.09425pt x 285.9204pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [9
 
 
 
- <./images/login_screen.png>] [12 <./images/home_screen.png> <./images/sidebar.
-png>]
+ <./images/login_screen.png>] [10 <./images/home_screen.png> <./images/sidebar.
+png>] [11 <./images/group_pic.png>]
 \openout2 = `technologies_used.aux'.
 
  (technologies_used.tex
 Chapter 6.
-) [13
+) [12
 
 
 
@@ -296,13 +282,13 @@ Chapter 6.
 
  (architectural_design.tex
 Chapter 7.
-<images/architectural_design.png, id=74, 595.22375pt x 293.095pt>
+<images/architectural_design.png, id=76, 595.22375pt x 293.095pt>
 File: images/architectural_design.png Graphic file (type png)
 
 <use images/architectural_design.png>
 Package pdftex.def Info: images/architectural_design.png used on input line 6.
-(pdftex.def)             Requested size: 433.62003pt x 213.51927pt.
-) [14
+(pdftex.def)             Requested size: 469.75502pt x 231.30994pt.
+) [13
 
 
 
@@ -314,7 +300,7 @@ Chapter 8.
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
-) [15
+) [14
 
 
 
@@ -326,7 +312,7 @@ Chapter 9.
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
-) [16
+) [15
 
 
 
@@ -335,7 +321,7 @@ Missing character: There is no ô in font cmr10!
 
  (lessons_learned.tex
 Chapter 10.
-) [17
+) [16
 
 
 
@@ -344,23 +330,23 @@ Chapter 10.
 
  (ethics.tex
 Chapter 11.
-<images/ethics_table.png, id=88, 473.51906pt x 316.18124pt>
+<images/ethics_table.png, id=90, 473.51906pt x 316.18124pt>
 File: images/ethics_table.png Graphic file (type png)
 
 <use images/ethics_table.png>
 Package pdftex.def Info: images/ethics_table.png used on input line 10.
-(pdftex.def)             Requested size: 378.81575pt x 252.94533pt.
- [18
+(pdftex.def)             Requested size: 355.13841pt x 237.13535pt.
+ [17
 
 
 
- <./images/ethics_table.png>]) [19]
+ <./images/ethics_table.png>]) [18]
 \openout2 = `conclusion.aux'.
 
 
 (conclusion.tex
 Chapter 12.
-) [20
+) [19
 
 
 
@@ -368,13 +354,13 @@ Chapter 12.
 \openout2 = `appendix.aux'.
 
  (appendix.tex
-<images/risk_analysis.png, id=100, 605.26125pt x 441.65pt>
+<images/risk_analysis.png, id=102, 605.26125pt x 441.65pt>
 File: images/risk_analysis.png Graphic file (type png)
 
 <use images/risk_analysis.png>
 Package pdftex.def Info: images/risk_analysis.png used on input line 7.
-(pdftex.def)             Requested size: 433.62003pt x 316.41081pt.
- [21
+(pdftex.def)             Requested size: 469.75502pt x 342.7739pt.
+ [20
 
 
 
@@ -386,36 +372,36 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
 
-<images/timeline.png, id=105, 691.58376pt x 190.7125pt>
+<images/timeline.png, id=107, 691.58376pt x 190.7125pt>
 File: images/timeline.png Graphic file (type png)
 
 <use images/timeline.png>
 Package pdftex.def Info: images/timeline.png used on input line 20.
-(pdftex.def)             Requested size: 433.62003pt x 119.57913pt.
-) [22
+(pdftex.def)             Requested size: 469.75502pt x 129.54309pt.
+) [21
 
  <./images/timeline.png>] (master.aux
-(abstract.aux) (introduction.aux) (requirements.aux) (use_cases.aux)
-(activity_diagram.aux) (design_implementation.aux) (technologies_used.aux)
-(architectural_design.aux) (design_rationale.aux) (testing.aux)
-(lessons_learned.aux) (ethics.aux) (conclusion.aux) (appendix.aux)) ) 
+(abstract.aux) (acknowledgments.aux) (introduction.aux) (requirements.aux)
+(use_cases.aux) (activity_diagram.aux) (design_implementation.aux)
+(technologies_used.aux) (architectural_design.aux) (design_rationale.aux)
+(testing.aux) (lessons_learned.aux) (ethics.aux) (conclusion.aux) (appendix.aux
+)) ) 
 Here is how much of TeX's memory you used:
- 1398 strings out of 493634
- 19807 string characters out of 3134831
- 79892 words of memory out of 3000000
- 4713 multiletter control sequences out of 15000+200000
+ 1412 strings out of 493634
+ 20082 string characters out of 3134831
+ 80227 words of memory out of 3000000
+ 4719 multiletter control sequences out of 15000+200000
  6370 words of font info for 23 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  29i,6n,21p,959b,217s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/
-Wesley/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.
-pfb><C:/Users/Wesley/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmbx12.pfb><C:/Users/Wesley/AppData/Local/Programs/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmr10.pfb><C:/Users/Wesley/AppData/Local/Programs/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on master.pdf (28 pages, 196496 bytes).
+<C:/Users/Wesley/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmbx10.pfb><C:/Users/Wesley/AppData/Local/Programs/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Wesley/AppData/Local/Programs/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Wesley/AppData/Local/Pro
+grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on master.pdf (28 pages, 205971 bytes).
 PDF statistics:
- 124 PDF objects out of 1000 (max. 8388607)
+ 126 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

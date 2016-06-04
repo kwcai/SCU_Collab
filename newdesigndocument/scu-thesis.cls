@@ -44,8 +44,8 @@
 \newlength{\@marginright}
 \setlength{\@marginright}{1.0in}
 
- \newlength{\@bindingoffset}
- \setlength{\@bindingoffset}{0.5in}
+\newlength{\@bindingoffset}
+\setlength{\@bindingoffset}{0in}
 
 
 % \textwidth = \paperwidth - \@marginleft - \@marginright - \@bindingoffset

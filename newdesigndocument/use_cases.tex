@@ -10,69 +10,51 @@ From the client side, the user is assumed to be an SCU student. The goal of what
 
 \section{Use Case \#1}
 	\begin{description}
-		\item[Name:] Create a new study group
-		\item[Goal:] To create a new study group for a class
+		\item[Name:] Create or join a group
 		\item[Actors:] Student
-		\item[Pre-conditions:]
-			\begin{itemize}
-				\item User wants to create a group
-			\end{itemize}
-		\item[Post-conditions:]
-			\begin{itemize}
-				\item Group is created
-			\end{itemize}
-		\item[Steps:]
+		\item[Pre-condition:]
+			Student must be logged in
+		\item[Post-condition:]
+			Group is created or joined
+		\item[Steps:] \mbox{}
 			\begin{enumerate}
-				\item User selects "Create Group" option
-				\item User creates a name for the group, and is provided a digital key
-			\end{enumerate}
-		\item[Exceptions:] n/a		
+				\item Select "Create a Group" or "Join a Group"
+				\item Enter a group name
+				\item Enter the group password
+			\end{enumerate}	
 	\end{description}
 
 \section{Use Case \#2}
-	\begin{description}
-		\item[Name:] Join a study group
-		\item[Goal:] To join an existing study group
-		\item[Actors:] Student
-		\item[Pre-conditions:]
-		\begin{itemize}
-			\item User wants to join a group
-		\end{itemize}
-		\item[Post-conditions:]
-		\begin{itemize}
-			\item User successfully joins a group
-		\end{itemize}
-		\item[Steps:]
-		\begin{enumerate}
-			\item User selects “Join Group” option
-			\item User selects the name of the group from the menu
-			\item User enters the group’s digital key
-		\end{enumerate}
-		\item[Exceptions:] n/a		
-	\end{description}
-	
-\section{Use Case \#3}
-	\begin{description}
-		\item[Name:] Invite others to a study group
-		\item[Goal:] To gather other students to the group
-		\item[Actors:] Inviter, Invitee
-		\item[Pre-conditions:]
-		\begin{itemize}
-			\item User seeks to add students to the group
-		\end{itemize}
-		\item[Post-conditions:]
-		\begin{itemize}
-			\item New students are successfully added
-		\end{itemize}
-		\item[Steps:]
-		\begin{enumerate}
-			\item User selects “Invite” option
-			\item User enters the student’s email address
-			\item Invitee receives a digital key to the group
-		\end{enumerate}
-		\item[Exceptions:] n/a		
-	\end{description}
+\begin{description}
+	\item[Name:] Set meetings
+	\item[Actors:] Student
+	\item[Pre-condition:]
+		Student must be a member of a group
+	\item[Post-condition:]
+		Meeting is set
+	\item[Steps:] \mbox{}
+	\begin{enumerate}
+		\item Select "Meetings"
+		\item Create or join an event
+	\end{enumerate}	
+\end{description}
 
+\section{Use Case \#3}
+\begin{description}
+	\item[Name:] Create or join a discussion
+	\item[Actors:] Student
+	\item[Pre-condition:]
+		Student must be a member of a group
+	\item[Post-condition:]
+		Student will be able to view and post responses in discussion
+	\item[Steps:] \mbox{}
+	\begin{enumerate}
+		\item Select a group page
+		\item View discussion and/or make posts
+	\end{enumerate}	
+\end{description}
+
+\iffalse
 \section{Use Case \#4}
 	\begin{description}
 		\item[Name:] View/edit calendar
@@ -94,26 +76,4 @@ From the client side, the user is assumed to be an SCU student. The goal of what
 			\item User chooses whether or not to receive reminders
 		\end{enumerate}
 		\item[Exceptions:] n/a		
-	\end{description}
-
-\section{Use Case \#5}
-	\begin{description}
-		\item[Name:] Create/join discussion on forum
-		\item[Goal:] Users use forum to discuss topics
-		\item[Actors:] Students
-		\item[Pre-conditions:]
-		\begin{itemize}
-			\item n/a
-		\end{itemize}
-		\item[Post-conditions:]
-		\begin{itemize}
-			\item User will be able view and respond to discussion
-		\end{itemize}
-		\item[Steps:]
-		\begin{enumerate}
-			\item User chooses a group
-			\item User selects the “Forum” link
-			\item User can choose existing discussion or creates their own
-		\end{enumerate}
-		\item[Exceptions:] n/a		
-	\end{description}
+	\end{description}\fi
