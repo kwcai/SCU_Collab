@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.4.28)  10 JUN 2016 14:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.4.28)  10 JUN 2016 14:43
 entering extended mode
 **./master.tex
 (master.tex
@@ -77,6 +77,13 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 ))
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
+)
+("C:\Users\Wesley\AppData\Local\Programs\MiKTeX 2.9\tex\latex\appendix\appendix
+.sty"
+Package: appendix 2009/09/02 v1.2b extra appendix facilities
+\c@@pps=\count93
+\c@@ppsavesec=\count94
+\c@@ppsaveapp=\count95
 ) (master.aux (abstract.aux) (acknowledgments.aux) (introduction.aux)
 (requirements.aux) (use_cases.aux) (activity_diagram.aux)
 (design_implementation.aux) (technologies_used.aux) (architectural_design.aux)
@@ -84,38 +91,38 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 (conclusion.aux) (appendix.aux))
 \openout1 = `master.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
 
 ("C:\Users\Wesley\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.m
 kii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count93
+\scratchcounter=\count96
 \scratchdimen=\dimen105
 \scratchbox=\box26
-\nofMPsegments=\count94
-\nofMParguments=\count95
+\nofMPsegments=\count97
+\nofMParguments=\count98
 \everyMPshowfont=\toks15
-\MPscratchCnt=\count96
+\MPscratchCnt=\count99
 \MPscratchDim=\dimen106
-\MPnumerator=\count97
-\makeMPintoPDFobject=\count98
+\MPnumerator=\count100
+\makeMPintoPDFobject=\count101
 \everyMPtoPDFconversion=\toks16
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 26.
+(Font)              <7> on input line 27.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 26.
+(Font)              <5> on input line 27.
  [1
 
 
@@ -358,21 +365,15 @@ might try typing `S' now just to see what is salvageable.
 ) [20
 
 
-]
-\openout2 = `appendix.aux'.
+] [21
 
- (appendix.tex
-Chapter 13.
-<images/risk_analysis.png, id=106, 605.26125pt x 441.65pt>
+] <images/risk_analysis.png, id=109, 605.26125pt x 441.65pt>
 File: images/risk_analysis.png Graphic file (type png)
 
 <use images/risk_analysis.png>
-Package pdftex.def Info: images/risk_analysis.png used on input line 7.
+Package pdftex.def Info: images/risk_analysis.png used on input line 60.
 (pdftex.def)             Requested size: 469.75502pt x 342.7739pt.
- [21
-
-
- <./images/risk_analysis.png>]
+ [22 <./images/risk_analysis.png>]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
@@ -380,41 +381,37 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
 
-<images/timeline.png, id=111, 691.58376pt x 190.7125pt>
+<images/timeline.png, id=114, 691.58376pt x 190.7125pt>
 File: images/timeline.png Graphic file (type png)
 
 <use images/timeline.png>
-Package pdftex.def Info: images/timeline.png used on input line 20.
+Package pdftex.def Info: images/timeline.png used on input line 73.
 (pdftex.def)             Requested size: 469.75502pt x 129.54309pt.
-) [22
+ [23
 
  <./images/timeline.png>] (master.aux
 (abstract.aux) (acknowledgments.aux) (introduction.aux) (requirements.aux)
 (use_cases.aux) (activity_diagram.aux) (design_implementation.aux)
 (technologies_used.aux) (architectural_design.aux) (design_rationale.aux)
-(testing.aux) (lessons_learned.aux) (ethics.aux) (conclusion.aux) (appendix.aux
-))
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+(testing.aux) (lessons_learned.aux) (ethics.aux) (conclusion.aux)) ) 
 Here is how much of TeX's memory you used:
- 1420 strings out of 493634
- 20166 string characters out of 3134831
- 80247 words of memory out of 3000000
- 4723 multiletter control sequences out of 15000+200000
+ 1513 strings out of 493634
+ 21585 string characters out of 3134831
+ 82337 words of memory out of 3000000
+ 4817 multiletter control sequences out of 15000+200000
  6716 words of font info for 24 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 29i,6n,21p,959b,217s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/Wesley/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmbx10.pfb><C:/Users/Wesley/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmbx12.pfb><C:/Users/Wesley/AppData/Local/Programs/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Wesley/AppData/Local/Progr
-ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Wesley/AppDa
-ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on master.pdf (29 pages, 222515 bytes).
+ 29i,6n,21p,959b,250s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/W
+esley/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.p
+fb><C:/Users/Wesley/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmbx12.pfb><C:/Users/Wesley/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmr10.pfb><C:/Users/Wesley/AppData/Local/Programs/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Wesley/AppData/Local/Prog
+rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on master.pdf (30 pages, 222657 bytes).
 PDF statistics:
- 133 PDF objects out of 1000 (max. 8388607)
+ 136 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
