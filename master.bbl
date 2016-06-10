@@ -1,0 +1,87 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Opeoluwa%
+, Gabriel%
+\BCBL {}\ \BBA {} Odunayo%
+}{%
+Opeoluwa%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2011}}%
+}]{%
+Opeoluwa2011}
+\APACinsertmetastar {%
+Opeoluwa2011}%
+\begin{APACrefauthors}%
+Opeoluwa, O\BPBI A.%
+, Gabriel, O\BPBI O.%
+\BCBL {}\ \BBA {} Odunayo, B\BPBI O.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2011}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Knowledge Sharing for Academic Enhancement among
+  Computer Science Undergraduates in Nigeria} {Knowledge sharing for academic
+  enhancement among computer science undergraduates in nigeria}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Computing & Information Systems}{}{}{27--35}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Rossitto%
+\ \BBA {} Eklundh%
+}{%
+Rossitto%
+\ \BBA {} Eklundh%
+}{%
+{\protect \APACyear {2007}}%
+}]{%
+Rossitto2007}
+\APACinsertmetastar {%
+Rossitto2007}%
+\begin{APACrefauthors}%
+Rossitto, C.%
+\BCBT {}\ \BBA {} Eklundh, K\BPBI S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2007}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Managing Work at Several Places: A Case of Project Work
+  in a Nomadic Group of Students} {Managing work at several places: A case of
+  project work in a nomadic group of students}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{In Proceedings of the 14th European Conference on
+  Cognitive Ergonomics: Invent! Explore!}{}{}{45--51}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Xushen%
+\ \BBA {} Yu%
+}{%
+Xushen%
+\ \BBA {} Yu%
+}{%
+{\protect \APACyear {{\protect \bibnodate {}}}}%
+}]{%
+Chang2015}
+\APACinsertmetastar {%
+Chang2015}%
+\begin{APACrefauthors}%
+Xushen, C.%
+\BCBT {}\ \BBA {} Yu, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{{\protect \bibnodate {}}}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Designing of a Mobile Collaboration Application for
+  Student Collaborative Group Work: Evidence from China} {Designing of a mobile
+  collaboration application for student collaborative group work: Evidence from
+  china}.{\BBCQ}
+\newblock
+
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}

@@ -1,0 +1,30 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: master.aux
+The style file: plain.bst
+A level-1 auxiliary file: abstract.aux
+A level-1 auxiliary file: acknowledgments.aux
+A level-1 auxiliary file: introduction.aux
+A level-1 auxiliary file: requirements.aux
+A level-1 auxiliary file: use_cases.aux
+A level-1 auxiliary file: activity_diagram.aux
+A level-1 auxiliary file: design_implementation.aux
+A level-1 auxiliary file: technologies_used.aux
+A level-1 auxiliary file: architectural_design.aux
+A level-1 auxiliary file: design_rationale.aux
+A level-1 auxiliary file: testing.aux
+A level-1 auxiliary file: lessons_learned.aux
+A level-1 auxiliary file: ethics.aux
+A level-1 auxiliary file: conclusion.aux
+A level-1 auxiliary file: appendix.aux
+Database file #1: Master.bib
+I was expecting a `,' or a `}'---line 4 of file Master.bib
+ :     
+ :     journal =      "Proceedings of the Annual Hawaii International Conference on System Sciences",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Name 1 in "Rossitto, Chiara, and Eklundh, Kerstin Severinson" has a comma at the end for entry Rossitto2007
+while executing---line 1049 of file plain.bst
+Name 1 in "Rossitto, Chiara, and Eklundh, Kerstin Severinson" has a comma at the end for entry Rossitto2007
+while executing---line 1090 of file plain.bst
+Warning--empty journal in Chang2015
+Warning--empty year in Chang2015
+(There were 3 error messages)
